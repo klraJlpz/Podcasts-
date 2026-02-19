@@ -1,0 +1,21 @@
+{
+  "firstName": "Iván Mauricio",
+  "lastName": "Morales Olguín",
+  "address": {
+    "city": "Córdoba"
+  },
+  "birthDate": "2009-03-24",
+  "hobbies": [
+    "Escuchar musica"
+  ],
+  "friends": [
+    {
+      "firstName": "Iñaki",
+      "lastName": "Romano"
+    },
+    {
+      "firstName": "Dilan",
+      "lastName": "Díaz"
+    }
+  ]
+}
