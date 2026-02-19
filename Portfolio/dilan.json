@@ -1,0 +1,21 @@
+{
+  "firstName": "Dilan Guillermo",
+  "lastName": "Xochiquixtle Díaz",
+  "address": {
+    "city": "Córdoba"
+  },
+  "birthDate": "2009-03-11",
+  "hobbies": [
+    "Listening to music"
+  ],
+  "friends": [
+    {
+      "firstName": "Ivan",
+      "lastName": "Mauricio "
+    },
+    {
+      "firstName": "Isabel ",
+      "lastName": "baigen "
+    }
+  ]
+}
