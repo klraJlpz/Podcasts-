@@ -1,0 +1,28 @@
+{
+  "firstName": "Klara Karime",
+  "lastName": "Jácome López",
+  "address": "Córdoba Veracruz, México",
+  "birthDate": "2009-09-12",
+  "hobbies": [
+    "Leer",
+    "Escuchar música",
+    "Dormir"
+  ],
+  "friends": [
+    {
+      "firstName": "Arizbeth",
+      "lastName": "Martinez Rendon",
+      "age": 16
+    },
+    {
+      "firstName": "Jacqueline",
+      "lastName": "Montalvo Cano",
+      "age": 16
+    },
+{
+      "firstName": "Isabel",
+      "lastName": "Baigen Jarillo",
+      "age": 16
+    }
+  ]
+}
