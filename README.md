@@ -1,10 +1,6 @@
-
 {
   "teamName": "Equipo NoSQL Podcast Project",
-  "project": "Streaming Podcast Manager
- (Audio): Por qué NoSQL: Un podcast es un 
-documento que contiene una lista de episodios
- (objetos simplificados) y metadata del creador.",
+  "project": "Streaming Podcast Manager (Audio): Por qué NoSQL: Un podcast es un documento que contiene una lista de episodios (objetos simplificados) y metadata del creador.",
   "team": [
     {
       "firstName": "Maria Isabel",
@@ -106,4 +102,6 @@ documento que contiene una lista de episodios
       ]
     }
   ]
-} 
+}
+
+      
