@@ -1,4 +1,4 @@
-Codigo
+
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager
