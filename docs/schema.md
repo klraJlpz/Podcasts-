@@ -1,28 +1,29 @@
 ```mermaid
 erDiagram
+
 PLAYLIST {
-    ObjectId _id
-    ObjectId creatorId  // Llave foránea → CREATOR._id
-    string title "Leyendas de Mexico: Voces del Mas Alla"
-    string theme "Mexican Urban Legends"
-    string description "Narraciones documentadas sobre leyendas tradicionales mexicanas"
+    ObjectId _id PK
+    ObjectId creatorId FK
+    string title
+    string theme
+    string description
     boolean isPublic
     number totalDurationMinutes
     date createdAt
 }
 
 CREATOR {
-    ObjectId _id   // Llave primaria
-    string name "Kari Hernandez"
-    string email "kari.podcast@schoolproject.mx"
-    string country "Mexico"
+    ObjectId _id PK
+    string name
+    string email
+    string country
     number followers
     date joinedAt
 }
 
 STATISTICS {
-    ObjectId _id              // Llave primaria
-    ObjectId playlistId       // Llave foránea → PLAYLIST._id
+    ObjectId _id PK
+    ObjectId playlistId FK
     number totalPlays
     number totalLikes
     number averageRating
@@ -30,25 +31,25 @@ STATISTICS {
 }
 
 PODCAST_EPISODE {
-    ObjectId episodeId   // Llave primaria
-    ObjectId playlistId  // Llave foránea → PLAYLIST._id
-    string legendTitle "La Llorona / El Charro Negro / La Pascualita"
-    string legendOriginRegion "Mexico"
-    string historicalContext "Colonial and Popular Folklore"
+    ObjectId episodeId PK
+    ObjectId playlistId FK
+    string legendTitle
+    string legendOriginRegion
+    string historicalContext
     number durationMinutes
     number rating
     boolean isExplicit
-    string language "Spanish"
+    string language
     date releaseDate
     number playCount
 }
 
 REVIEW {
-    ObjectId reviewId        // Llave primaria
-    ObjectId playlistId      // Llave foránea → PLAYLIST._id
-    string username "Ana_MX"
+    ObjectId reviewId PK
+    ObjectId playlistId FK
+    string username
     number rating
-    string comment "Excelente narracion y respeto cultural"
+    string comment
     date createdAt
 }
 
