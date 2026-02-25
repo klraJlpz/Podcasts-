@@ -1,3 +1,5 @@
+```mermaid
+erDiagram
 PLAYLIST {
     ObjectId _id
     ObjectId creatorId  // Llave foránea → CREATOR._id
@@ -54,3 +56,4 @@ CREATOR ||--o{ PLAYLIST : creates
 PLAYLIST ||--|| STATISTICS : has
 PLAYLIST ||--o{ PODCAST_EPISODE : contains
 PLAYLIST ||--o{ REVIEW : receives
+```
