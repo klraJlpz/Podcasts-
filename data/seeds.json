@@ -1,1 +1,276 @@
-Código 
+[
+  {
+    "name": "Ana Torres",
+    "email": "ana.torres@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Carlos Medina",
+    "email": "carlos.medina@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Sofia Ramirez",
+    "email": "sofia.ramirez@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Luis Herrera",
+    "email": "luis.herrera@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Valeria Cruz",
+    "email": "valeria.cruz@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Diego Alvarez",
+    "email": "diego.alvarez@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Mariana Lopez",
+    "email": "mariana.lopez@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Jorge Castillo",
+    "email": "jorge.castillo@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Daniela Flores",
+    "email": "daniela.flores@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Ricardo Gomez",
+    "email": "ricardo.gomez@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+
+  {
+    "name": "Fernanda Ruiz",
+    "email": "fernanda.ruiz@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Andres Navarro",
+    "email": "andres.navarro@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Camila Ortega",
+    "email": "camila.ortega@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Hector Molina",
+    "email": "hector.molina@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Paola Reyes",
+    "email": "paola.reyes@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Emilio Vargas",
+    "email": "emilio.vargas@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Natalia Paredes",
+    "email": "natalia.paredes@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Raul Dominguez",
+    "email": "raul.dominguez@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Isabella Soto",
+    "email": "isabella.soto@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Mateo Rojas",
+    "email": "mateo.rojas@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+
+  {
+    "name": "Lucia Campos",
+    "email": "lucia.campos@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Sebastian Vega",
+    "email": "sebastian.vega@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Daniel Perez",
+    "email": "daniel.perez@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Renata Silva",
+    "email": "renata.silva@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Alberto Ibarra",
+    "email": "alberto.ibarra@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Gabriela Mendoza",
+    "email": "gabriela.mendoza@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Ivan Salazar",
+    "email": "ivan.salazar@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Karina Delgado",
+    "email": "karina.delgado@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Oscar Luna",
+    "email": "oscar.luna@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Patricia Morales",
+    "email": "patricia.morales@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+
+  {
+    "name": "Alejandro Ramos",
+    "email": "alejandro.ramos@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Monica Chavez",
+    "email": "monica.chavez@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Bruno Castillo",
+    "email": "bruno.castillo@podmail.com",
+    "active_status": false,
+    "role": "listener"
+  },
+  {
+    "name": "Tania Fuentes",
+    "email": "tania.fuentes@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+  {
+    "name": "Leonardo Acosta",
+    "email": "leonardo.acosta@podmail.com",
+    "active_status": true,
+    "role": "listener"
+  },
+
+  {
+    "name": "Andrea Navarro",
+    "email": "andrea.navarro@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Miguel Herrera",
+    "email": "miguel.herrera@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Claudia Romero",
+    "email": "claudia.romero@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Javier Molina",
+    "email": "javier.molina@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Laura Castillo",
+    "email": "laura.castillo@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Roberto Diaz",
+    "email": "roberto.diaz@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Elena Vargas",
+    "email": "elena.vargas@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Sergio Ortega",
+    "email": "sergio.ortega@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Veronica Salas",
+    "email": "veronica.salas@podmail.com",
+    "active_status": true,
+    "role": "host"
+  },
+  {
+    "name": "Francisco Reyes",
+    "email": "francisco.reyes@podmail.com",
+    "active_status": true,
+    "role": "host"
+  }
+]
