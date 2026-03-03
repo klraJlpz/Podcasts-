@@ -1,112 +1,215 @@
-// Seleccionar base de datos
-use("podcast_legends");
+// Usa la base de datos (la crea si no existe)
+use leyendas_podcast;
 
-// Colección CREATOR
-// -----------------
-db.creators.insertMany([
-  {
-    _id: ObjectId(),           // PK
-    name: "Historias del Mundo",
-    email: "historias@podcasts.com",
-    country: "ES",
-    followers: 120000,
-    joinedAt: new Date("2022-01-10T00:00:00Z")
-  },
-  {
-    _id: ObjectId(),
-    name: "Mitos y Leyendas",
-    email: "mitos@podcasts.com",
-    country: "MX",
-    followers: 85000,
-    joinedAt: new Date("2023-03-05T00:00:00Z")
+// CREATOR
+db.createCollection("creator", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["name", "email", "country", "followers", "joinedAt"],
+      properties: {
+        name: { bsonType: "string" },
+        email: { bsonType: "string" },
+        country: { bsonType: "string" },
+        followers: { bsonType: "int" },
+        bio: { bsonType: "string" },
+        joinedAt: { bsonType: "date" }
+      }
+    }
   }
-]);
-
-// Guardamos algunos IDs para relacionar datos
-const creator = db.creators.findOne({ name: "Historias del Mundo" });
-
-// Colección PLAYLIST
-// ------------------
-db.playlists.insertOne({
-  _id: ObjectId(),                   // PK
-  creatorId: creator._id,            // FK -> CREATOR._id
-  title: "Leyendas Europeas",
-  theme: "Europa",
-  description: "Colección de leyendas históricas de distintas regiones de Europa.",
-  isPublic: true,
-  totalDurationMinutes: 180,
-  createdAt: new Date("2023-06-01T00:00:00Z")
 });
 
-const playlist = db.playlists.findOne({ title: "Leyendas Europeas" });
+// índices sugeridos
+db.creator.createIndex({ email: 1 }, { unique: true });
 
-// Colección STATISTICS (1 a 1 con PLAYLIST)
-// -----------------------------------------
-db.statistics.insertOne({
-  _id: ObjectId(),               // PK
-  playlistId: playlist._id,      // FK -> PLAYLIST._id
-  totalPlays: 25000,
-  totalLikes: 3200,
-  averageRating: 4.6,
-  totalEpisodes: 6
+
+// OYENTES
+db.createCollection("oyente", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["username", "email", "country", "registeredAt"],
+      properties: {
+        username: { bsonType: "string" },
+        email: { bsonType: "string" },
+        country: { bsonType: "string" },
+        registeredAt: { bsonType: "date" }
+      }
+    }
+  }
 });
 
-// Colección PODCAST_EPISODE
-// -------------------------
-db.podcast_episodes.insertMany([
-  {
-    episodeId: ObjectId(),               // PK
-    playlistId: playlist._id,            // FK -> PLAYLIST._id
-    legendTitle: "La Dama Blanca",
-    legendOriginRegion: "Francia",
-    historicalContext: "Leyenda medieval asociada a castillos y nobles.",
-    durationMinutes: 35,
-    rating: 4.7,
-    isExplicit: false,
-    language: "es",
-    releaseDate: new Date("2023-06-05T00:00:00Z"),
-    playCount: 6000
-  },
-  {
-    episodeId: ObjectId(),
-    playlistId: playlist._id,
-    legendTitle: "El Jinete sin Cabeza",
-    legendOriginRegion: "Alemania",
-    historicalContext: "Relato popular sobre un caballero maldito.",
-    durationMinutes: 40,
-    rating: 4.5,
-    isExplicit: false,
-    language: "es",
-    releaseDate: new Date("2023-06-10T00:00:00Z"),
-    playCount: 5200
-  }
-]);
+db.oyente.createIndex({ username: 1 }, { unique: true });
+db.oyente.createIndex({ email: 1 }, { unique: true });
 
-// Colección REVIEW
-// ----------------
-db.reviews.insertMany([
-  {
-    reviewId: ObjectId(),              // PK
-    playlistId: playlist._id,          // FK -> PLAYLIST._id
-    username: "user123",
-    rating: 5,
-    comment: "Excelente selección de leyendas, muy bien narradas.",
-    createdAt: new Date("2023-06-15T00:00:00Z")
-  },
-  {
-    reviewId: ObjectId(),
-    playlistId: playlist._id,
-    username: "legend_fan",
-    rating: 4,
-    comment: "Muy interesante, pero me gustaría episodios más largos.",
-    createdAt: new Date("2023-06-18T00:00:00Z")
-  }
-]);
 
-// Ejemplos de índices recomendados
-// --------------------------------
-db.creators.createIndex({ email: 1 }, { unique: true });
-db.playlists.createIndex({ creatorId: 1 });
-db.statistics.createIndex({ playlistId: 1 }, { unique: true });
-db.podcast_episodes.createIndex({ playlistId: 1 });
-db.reviews.createIndex({ playlistId: 1 });
+// PLAYLIST
+db.createCollection("playlist", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "creatorId",
+        "title",
+        "theme",
+        "description",
+        "isPublic",
+        "totalDurationMinutes",
+        "createdAt"
+      ],
+      properties: {
+        creatorId: { bsonType: "objectId" },
+        title: { bsonType: "string" },
+        theme: { bsonType: "string" },
+        description: { bsonType: "string" },
+        isPublic: { bsonType: "bool" },
+        totalDurationMinutes: { bsonType: "int" },
+        createdAt: { bsonType: "date" }
+      }
+    }
+  }
+});
+
+db.playlist.createIndex({ creatorId: 1 });
+db.playlist.createIndex({ isPublic: 1 });
+
+
+// STATISTICS (1:1 con PLAYLIST)
+db.createCollection("statistics", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "playlistId",
+        "totalPlays",
+        "totalLikes",
+        "averageRating",
+        "totalEpisodes"
+      ],
+      properties: {
+        playlistId: { bsonType: "objectId" },
+        totalPlays: { bsonType: "int" },
+        totalLikes: { bsonType: "int" },
+        averageRating: { bsonType: "double" },
+        totalEpisodes: { bsonType: "int" }
+      }
+    }
+  }
+});
+
+// Enforce 1:1 playlist <-> statistics
+db.statistics.createIndex(
+  { playlistId: 1 },
+  { unique: true }
+);
+
+
+// PODCAST_EPISODE
+db.createCollection("podcast_episode", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [
+        "playlistId",
+        "legendTitle",
+        "legendOriginRegion",
+        "historicalContext",
+        "durationMinutes",
+        "rating",
+        "isExplicit",
+        "language",
+        "releaseDate",
+        "playCount",
+        "audioUrl"
+      ],
+      properties: {
+        playlistId: { bsonType: "objectId" },
+        legendTitle: { bsonType: "string" },
+        legendOriginRegion: { bsonType: "string" },
+        historicalContext: { bsonType: "string" },
+        durationMinutes: { bsonType: "int" },
+        rating: { bsonType: "double" },
+        isExplicit: { bsonType: "bool" },
+        language: { bsonType: "string" },
+        releaseDate: { bsonType: "date" },
+        playCount: { bsonType: "int" },
+        audioUrl: { bsonType: "string" }
+      }
+    }
+  }
+});
+
+db.podcast_episode.createIndex({ playlistId: 1 });
+db.podcast_episode.createIndex({ releaseDate: -1 });
+
+
+// REVIEW
+db.createCollection("review", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["playlistId", "oyenteId", "rating", "comment", "createdAt"],
+      properties: {
+        playlistId: { bsonType: "objectId" },
+        oyenteId: { bsonType: "objectId" },
+        rating: { bsonType: "int" },
+        comment: { bsonType: "string" },
+        createdAt: { bsonType: "date" }
+      }
+    }
+  }
+});
+
+db.review.createIndex({ playlistId: 1 });
+db.review.createIndex({ oyenteId: 1 });
+// Una reseña por oyente por playlist (opcional)
+db.review.createIndex(
+  { playlistId: 1, oyenteId: 1 },
+  { unique: true }
+);
+
+
+// PLAYBACK_PROGRESS
+db.createCollection("playback_progress", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["oyenteId", "episodeId", "minuteStopped", "lastPlayedAt"],
+      properties: {
+        oyenteId: { bsonType: "objectId" },
+        episodeId: { bsonType: "objectId" },
+        minuteStopped: { bsonType: "int" },
+        lastPlayedAt: { bsonType: "date" }
+      }
+    }
+  }
+});
+
+// Solo un registro de progreso por (oyente, episodio)
+db.playback_progress.createIndex(
+  { oyenteId: 1, episodeId: 1 },
+  { unique: true }
+);
+
+
+// SUBSCRIPTION
+db.createCollection("subscription", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["oyenteId", "creatorId", "subscribedAt"],
+      properties: {
+        oyenteId: { bsonType: "objectId" },
+        creatorId: { bsonType: "objectId" },
+        subscribedAt: { bsonType: "date" }
+      }
+    }
+  }
+});
+
+db.subscription.createIndex({ oyenteId: 1 });
+db.subscription.createIndex({ creatorId: 1 });
+db.subscription.createIndex(
+  { oyenteId: 1, creatorId: 1 },
+  { unique: true }
+);
