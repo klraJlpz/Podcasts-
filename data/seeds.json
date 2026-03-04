@@ -438,4 +438,16 @@
   "content_count": 25,
   "created_at": "2026-02-05T10:05:00Z"
 }
+{
+  "name": "Diego Navarro",
+  "email": "diego.navarro@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Innovación Digital",
+  "description": "Tendencias en tecnología e inteligencia artificial",
+  "category": "Tecnología",
+  "followers": 1680,
+  "content_count": 34,
+  "created_at": "2026-02-15T14:20:00Z"
+}
 ]
