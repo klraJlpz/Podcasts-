@@ -59,7 +59,6 @@
     "active_status": true,
     "role": "listener"
   },
-
   {
     "name": "Fernanda Ruiz",
     "email": "fernanda.ruiz@podmail.com",
@@ -122,98 +121,6 @@
   },
 
   {
-    "name": "Lucia Campos",
-    "email": "lucia.campos@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Sebastian Vega",
-    "email": "sebastian.vega@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Daniel Perez",
-    "email": "daniel.perez@podmail.com",
-    "active_status": false,
-    "role": "listener"
-  },
-  {
-    "name": "Renata Silva",
-    "email": "renata.silva@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Alberto Ibarra",
-    "email": "alberto.ibarra@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Gabriela Mendoza",
-    "email": "gabriela.mendoza@podmail.com",
-    "active_status": false,
-    "role": "listener"
-  },
-  {
-    "name": "Ivan Salazar",
-    "email": "ivan.salazar@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Karina Delgado",
-    "email": "karina.delgado@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Oscar Luna",
-    "email": "oscar.luna@podmail.com",
-    "active_status": false,
-    "role": "listener"
-  },
-  {
-    "name": "Patricia Morales",
-    "email": "patricia.morales@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-
-  {
-    "name": "Alejandro Ramos",
-    "email": "alejandro.ramos@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Monica Chavez",
-    "email": "monica.chavez@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Bruno Castillo",
-    "email": "bruno.castillo@podmail.com",
-    "active_status": false,
-    "role": "listener"
-  },
-  {
-    "name": "Tania Fuentes",
-    "email": "tania.fuentes@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-  {
-    "name": "Leonardo Acosta",
-    "email": "leonardo.acosta@podmail.com",
-    "active_status": true,
-    "role": "listener"
-  },
-
-  {
     "name": "Andrea Navarro",
     "email": "andrea.navarro@podmail.com",
     "active_status": true,
@@ -242,48 +149,293 @@
     "email": "laura.castillo@podmail.com",
     "active_status": true,
     "role": "host"
-  },
-  {
-    "name": "Roberto Diaz",
-    "email": "roberto.diaz@podmail.com",
-    "active_status": true,
-    "role": "host"
-  },
-  {
-    "name": "Elena Vargas",
-    "email": "elena.vargas@podmail.com",
-    "active_status": true,
-    "role": "host"
-  },
-  {
-    "name": "Sergio Ortega",
-    "email": "sergio.ortega@podmail.com",
-    "active_status": true,
-    "role": "host"
-  },
-  {
-    "name": "Veronica Salas",
-    "email": "veronica.salas@podmail.com",
-    "active_status": true,
-    "role": "host"
-  },
-  {
-    "name": "Francisco Reyes",
-    "email": "francisco.reyes@podmail.com",
-    "active_status": true,
-    "role": "host"
   }
-  
-{
-  "name": "Claudia Méndez",
-  "email": "claudia.mendez@podmail.com",
+  {
+  "name": "Luis Andrade",
+  "email": "luis.andrade@podmail.com",
   "active_status": true,
   "role": "creator",
-  "channel_name": "Familia y Hogar",
-  "description": "Consejos para la vida familiar",
-  "category": "Familia",
-  "followers": 720,
-  "content_count": 23,
-  "created_at": "2026-02-08T14:00:00Z"
+  "channel_name": "Tech al Día",
+  "description": "Noticias y análisis de tecnología",
+  "category": "Tecnología",
+  "followers": 1540,
+  "content_count": 45,
+  "created_at": "2026-01-15T10:30:00Z"
+},
+{
+  "name": "Mariana Soto",
+  "email": "mariana.soto@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Mente Positiva",
+  "description": "Motivación y crecimiento personal",
+  "category": "Desarrollo Personal",
+  "followers": 980,
+  "content_count": 30,
+  "created_at": "2026-02-01T09:15:00Z"
+},
+{
+  "name": "Carlos Vega",
+  "email": "carlos.vega@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Finanzas Claras",
+  "description": "Educación financiera para todos",
+  "category": "Finanzas",
+  "followers": 2100,
+  "content_count": 60,
+  "created_at": "2026-01-20T12:00:00Z"
+},
+{
+  "name": "Andrea Ruiz",
+  "email": "andrea.ruiz@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Cocina Fácil",
+  "description": "Recetas sencillas y deliciosas",
+  "category": "Gastronomía",
+  "followers": 1320,
+  "content_count": 38,
+  "created_at": "2026-02-10T16:45:00Z"
+},
+{
+  "name": "Fernando Castillo",
+  "email": "fernando.castillo@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Historia Viva",
+  "description": "Relatos y análisis históricos",
+  "category": "Historia",
+  "followers": 870,
+  "content_count": 27,
+  "created_at": "2026-01-05T11:20:00Z"
+},
+{
+  "name": "Sofía Morales",
+  "email": "sofia.morales@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Salud Integral",
+  "description": "Bienestar físico y mental",
+  "category": "Salud",
+  "followers": 1650,
+  "content_count": 41,
+  "created_at": "2026-02-03T08:40:00Z"
+},
+{
+  "name": "Jorge Ramos",
+  "email": "jorge.ramos@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Mundo Deportivo",
+  "description": "Análisis y noticias deportivas",
+  "category": "Deportes",
+  "followers": 1890,
+  "content_count": 52,
+  "created_at": "2026-01-28T18:10:00Z"
+},
+{
+  "name": "Valeria Núñez",
+  "email": "valeria.nunez@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Arte y Cultura",
+  "description": "Explorando el mundo artístico",
+  "category": "Cultura",
+  "followers": 760,
+  "content_count": 22,
+  "created_at": "2026-02-12T13:00:00Z"
+},
+{
+  "name": "Ricardo Flores",
+  "email": "ricardo.flores@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Ciencia Hoy",
+  "description": "Descubrimientos científicos actuales",
+  "category": "Ciencia",
+  "followers": 1420,
+  "content_count": 36,
+  "created_at": "2026-01-18T07:50:00Z"
+},
+{
+  "name": "Natalia Cruz",
+  "email": "natalia.cruz@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Viaja Conmigo",
+  "description": "Experiencias y tips de viaje",
+  "category": "Viajes",
+  "followers": 1190,
+  "content_count": 29,
+  "created_at": "2026-02-06T15:30:00Z"
+},
+{
+  "name": "Daniel Ortega",
+  "email": "daniel.ortega@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Emprende Ya",
+  "description": "Consejos para emprendedores",
+  "category": "Negocios",
+  "followers": 1730,
+  "content_count": 44,
+  "created_at": "2026-01-22T10:10:00Z"
+},
+{
+  "name": "Camila Herrera",
+  "email": "camila.herrera@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Educación Activa",
+  "description": "Métodos y recursos educativos",
+  "category": "Educación",
+  "followers": 890,
+  "content_count": 26,
+  "created_at": "2026-02-09T09:00:00Z"
+},
+{
+  "name": "Héctor Salinas",
+  "email": "hector.salinas@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Marketing Digital",
+  "description": "Estrategias de marketing online",
+  "category": "Marketing",
+  "followers": 2050,
+  "content_count": 55,
+  "created_at": "2026-01-30T14:25:00Z"
+},
+{
+  "name": "Paola Jiménez",
+  "email": "paola.jimenez@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Moda Actual",
+  "description": "Tendencias y estilo personal",
+  "category": "Moda",
+  "followers": 1340,
+  "content_count": 33,
+  "created_at": "2026-02-04T12:45:00Z"
+},
+{
+  "name": "Emilio Torres",
+  "email": "emilio.torres@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Música y Más",
+  "description": "Análisis musical y entrevistas",
+  "category": "Música",
+  "followers": 1580,
+  "content_count": 39,
+  "created_at": "2026-01-12T17:00:00Z"
+},
+{
+  "name": "Lucía Mendoza",
+  "email": "lucia.mendoza@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Psicología al Día",
+  "description": "Temas psicológicos explicados fácil",
+  "category": "Psicología",
+  "followers": 1470,
+  "content_count": 37,
+  "created_at": "2026-02-07T11:35:00Z"
+},
+{
+  "name": "Sebastián Ríos",
+  "email": "sebastian.rios@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Gaming Zone",
+  "description": "Noticias y reseñas de videojuegos",
+  "category": "Videojuegos",
+  "followers": 2300,
+  "content_count": 70,
+  "created_at": "2026-01-25T19:20:00Z"
+},
+{
+  "name": "Renata Aguilar",
+  "email": "renata.aguilar@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Eco Vida",
+  "description": "Sostenibilidad y medio ambiente",
+  "category": "Medio Ambiente",
+  "followers": 910,
+  "content_count": 24,
+  "created_at": "2026-02-02T08:15:00Z"
+},
+{
+  "name": "Alberto Navarro",
+  "email": "alberto.navarro@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Derecho Fácil",
+  "description": "Conceptos legales explicados sencillo",
+  "category": "Derecho",
+  "followers": 820,
+  "content_count": 21,
+  "created_at": "2026-01-08T13:40:00Z"
+},
+{
+  "name": "Gabriela León",
+  "email": "gabriela.leon@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Cine y Series",
+  "description": "Reseñas y análisis cinematográfico",
+  "category": "Entretenimiento",
+  "followers": 1760,
+  "content_count": 48,
+  "created_at": "2026-01-27T20:00:00Z"
+},
+{
+  "name": "Iván Duarte",
+  "email": "ivan.duarte@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Programación Fácil",
+  "description": "Aprende a programar desde cero",
+  "category": "Tecnología",
+  "followers": 1950,
+  "content_count": 58,
+  "created_at": "2026-01-14T09:55:00Z"
+},
+{
+  "name": "Karina Ponce",
+  "email": "karina.ponce@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Relaciones Reales",
+  "description": "Consejos sobre relaciones humanas",
+  "category": "Relaciones",
+  "followers": 1020,
+  "content_count": 28,
+  "created_at": "2026-02-11T16:10:00Z"
+},
+{
+  "name": "Oscar Martínez",
+  "email": "oscar.martinez@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Arquitectura Moderna",
+  "description": "Diseño y tendencias arquitectónicas",
+  "category": "Arquitectura",
+  "followers": 740,
+  "content_count": 19,
+  "created_at": "2026-01-09T15:15:00Z"
+},
+{
+  "name": "Patricia Salazar",
+  "email": "patricia.salazar@podmail.com",
+  "active_status": true,
+  "role": "creator",
+  "channel_name": "Literatura Viva",
+  "description": "Análisis y recomendaciones de libros",
+  "category": "Literatura",
+  "followers": 880,
+  "content_count": 25,
+  "created_at": "2026-02-05T10:05:00Z"
 }
 ]
