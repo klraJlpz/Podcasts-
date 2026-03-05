@@ -55,7 +55,7 @@ PODCAST_EPISODE {
 
 REVIEW {
     ObjectId reviewId PK
-    ObjectId playlistId FK
+    ObjectId episodeId FK
     ObjectId oyenteId FK
     number rating
     string comment
@@ -80,7 +80,7 @@ SUBSCRIPTION {
 CREATOR ||--o{ PLAYLIST : creates
 PLAYLIST ||--|| STATISTICS : has
 PLAYLIST ||--o{ PODCAST_EPISODE : contains
-PLAYLIST ||--o{ REVIEW : receives
+PODCAST_EPISODE ||--o{ REVIEW : receives
 OYENTES ||--o{ REVIEW : writes
 OYENTES ||--o{ PLAYBACK_PROGRESS : tracks
 PODCAST_EPISODE ||--o{ PLAYBACK_PROGRESS : stores
