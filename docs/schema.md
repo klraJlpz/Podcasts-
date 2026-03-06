@@ -1,21 +1,35 @@
 ```mermaid
 erDiagram
-CREATOR {
-    ObjectId creatorId PK
+
+USERS {
+    ObjectId userId PK
     string name
     string email
+    string password
     string country
-    number followers
+    date createdAt
+}
+
+CREATOR {
+    ObjectId creatorId PK
+    ObjectId userId FK
     string bio
+    number followersCount
     date joinedAt
 }
 
-OYENTES {
-    ObjectId oyenteId PK
+LISTENER {
+    ObjectId listenerId PK
+    ObjectId userId FK
     string username
-    string email
-    string country
     date registeredAt
+}
+
+FOLLOW {
+    ObjectId followId PK
+    ObjectId listenerId FK
+    ObjectId creatorId FK
+    date followedAt
 }
 
 PLAYLIST {
@@ -45,7 +59,6 @@ PODCAST_EPISODE {
     string legendOriginRegion
     string historicalContext
     number durationMinutes
-    number rating
     boolean isExplicit
     string language
     date releaseDate
@@ -55,8 +68,8 @@ PODCAST_EPISODE {
 
 REVIEW {
     ObjectId reviewId PK
-    ObjectId episodeId FK
-    ObjectId oyenteId FK
+    ObjectId playlistId FK
+    ObjectId listenerId FK
     number rating
     string comment
     date createdAt
@@ -64,26 +77,21 @@ REVIEW {
 
 PLAYBACK_PROGRESS {
     ObjectId progressId PK
-    ObjectId oyenteId FK
+    ObjectId listenerId FK
     ObjectId episodeId FK
     number minuteStopped
     date lastPlayedAt
 }
 
-SUBSCRIPTION {
-    ObjectId subscriptionId PK
-    ObjectId oyenteId FK
-    ObjectId creatorId FK
-    date subscribedAt
-}
-
+USERS ||--|| CREATOR : can_be
+USERS ||--|| LISTENER : can_be
 CREATOR ||--o{ PLAYLIST : creates
 PLAYLIST ||--|| STATISTICS : has
 PLAYLIST ||--o{ PODCAST_EPISODE : contains
-PODCAST_EPISODE ||--o{ REVIEW : receives
-OYENTES ||--o{ REVIEW : writes
-OYENTES ||--o{ PLAYBACK_PROGRESS : tracks
+PLAYLIST ||--o{ REVIEW : receives
+LISTENER ||--o{ REVIEW : writes
+LISTENER ||--o{ PLAYBACK_PROGRESS : tracks
 PODCAST_EPISODE ||--o{ PLAYBACK_PROGRESS : stores
-OYENTES ||--o{ SUBSCRIPTION : follows
-CREATOR ||--o{ SUBSCRIPTION : gains
+LISTENER ||--o{ FOLLOW : follows
+CREATOR ||--o{ FOLLOW : gains
 ```
