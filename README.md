@@ -109,7 +109,7 @@ Data is stored as **JSON/BSON documents** organized in collections.
 
 #Team Responsibilities
 
-*Data Modeler*
+****🪼Data Modeler****
 Responsible for:
 - Designing the document structure
 - Defining collections
@@ -121,7 +121,7 @@ Responsible for:*
 - Managing the database connection
 - Organizing the GitHub repository
 
-🔍 Query Developer
+ Query Developer
 Responsible for:
 Creating database queries
 Retrieving and filtering data
