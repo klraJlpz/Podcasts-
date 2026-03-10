@@ -71,19 +71,19 @@ Visual Studio Code — development environment
 GitHub — version control and collaboration platform
 
 ## 👥 Team Data
-JSON
-Copiar código
+
+```json
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager (Audio)",
   "team": [
-    {
+{
       "firstName": "Klara Karime",
       "lastName": "Jácome López",
       "role": "The Data Seeder / QA",
       "age": 16
     },
-    {
+     {
       "firstName": "Maria Isabel",
       "lastName": "Baigen Jarillo",
       "role": "The Data Modeler",
@@ -103,3 +103,4 @@ Copiar código
     }
   ]
 }
+```
