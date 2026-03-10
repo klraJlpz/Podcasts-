@@ -159,7 +159,7 @@ Through this project the team learned:
 - How to deploy databases using MongoDB Atlas
 - How to collaborate using GitHub version control
 
-# Student Pledge
+# 📃 Student Pledge 
 
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process throughout the course.
