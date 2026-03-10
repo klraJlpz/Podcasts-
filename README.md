@@ -110,28 +110,32 @@ Data is stored as **JSON/BSON documents** organized in collections.
 #Team Responsibilities
 
 ****🪼Data Modeler****
+
 Responsible for:
 - Designing the document structure
 - Defining collections
 - Deciding between embedding vs referencing
 
-*Integration Specialist
-Responsible for:*
+****🐳Integration Specialist****
+Responsible for:
 - Creating the MongoDB Atlas cluster
 - Managing the database connection
 - Organizing the GitHub repository
 
- Query Developer
+ ****🐬Query Developer****
+
 Responsible for:
-Creating database queries
-Retrieving and filtering data
-Testing query performance
-🧪 Data Seeder / QA
+- Creating database queries
+- Retrieving and filtering data
+- Testing query performance
+
+****🐋Data Seeder / QA****
+
 Responsible for:
-Generating mock data using JSON
-Inserting documents into the database
-Validating queries and identifying bugs
-🤖 AI-Assisted Development
+- Generating mock data using JSON
+- Inserting documents into the database
+- Validating queries and identifying bugs
+# AI-Assisted Development
 During the development of this project the team used ChatGPT as a Senior NoSQL Mentor.
 The AI helped the team to:
 Understand NoSQL architecture concepts
