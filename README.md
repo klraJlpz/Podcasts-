@@ -107,30 +107,30 @@ Data is stored as **JSON/BSON documents** organized in collections.
 ```
 
 
-#Team Responsibilities
+# Team Responsibilities
 
-****🪼Data Modeler****
+****🐋 Data Modeler****
 
 Responsible for:
 - Designing the document structure
 - Defining collections
 - Deciding between embedding vs referencing
 
-****🐳Integration Specialist****
+****🐳 Integration Specialist****
 
 Responsible for:
 - Creating the MongoDB Atlas cluster
 - Managing the database connection
 - Organizing the GitHub repository
 
- ****🐬Query Developer****
+ ****🐬 Query Developer****
 
 Responsible for:
 - Creating database queries
 - Retrieving and filtering data
 - Testing query performance
 
-****🐋Data Seeder / QA****
+****🪼 Data Seeder / QA****
 
 Responsible for:
 - Generating mock data using JSON
