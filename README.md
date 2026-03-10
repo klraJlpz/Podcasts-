@@ -105,3 +105,46 @@ Data is stored as **JSON/BSON documents** organized in collections.
   ]
 }
 ```
+
+
+#Team Responsibilities
+
+* Data Modeler *
+Responsible for:
+- Designing the document structure
+- Defining collections
+- Deciding between embedding vs referencing
+
+*Integration Specialist
+Responsible for:*
+Creating the MongoDB Atlas cluster
+Managing the database connection
+Organizing the GitHub repository
+
+🔍 Query Developer
+Responsible for:
+Creating database queries
+Retrieving and filtering data
+Testing query performance
+🧪 Data Seeder / QA
+Responsible for:
+Generating mock data using JSON
+Inserting documents into the database
+Validating queries and identifying bugs
+🤖 AI-Assisted Development
+During the development of this project the team used ChatGPT as a Senior NoSQL Mentor.
+The AI helped the team to:
+Understand NoSQL architecture concepts
+Generate JSON examples
+Explain database modeling strategies
+Validate technical decisions
+This helped improve the learning process and technical understanding of the team.
+📊 Learning Outcomes
+Through this project the team learned:
+How to design NoSQL document architectures
+How to structure JSON/BSON documents
+How to deploy databases using MongoDB Atlas
+How to collaborate using GitHub version control
+📜 Student Pledge
+All team members reviewed and validated the code included in this repository.
+This project represents our own work and reflects our learning process throughout the course.
