@@ -63,8 +63,9 @@ Data is stored as **JSON/BSON documents** organized in collections.
 
 ## Technologies Used
 **The following technologies were used during development:**
--MongoDB — NoSQL database
--MongoDB Atlas — cloud database service
+
+-*MongoDB* — NoSQL database
+-*MongoDB Atlas* — cloud database service
 -MongoDB Compass — database visualization tool
 -Figma — mobile interface framework
 -Visual Studio Code — development environment
