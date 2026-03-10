@@ -109,7 +109,7 @@ Data is stored as **JSON/BSON documents** organized in collections.
 
 #Team Responsibilities
 
-* Data Modeler *
+*Data Modeler*
 Responsible for:
 - Designing the document structure
 - Defining collections
@@ -117,9 +117,9 @@ Responsible for:
 
 *Integration Specialist
 Responsible for:*
-Creating the MongoDB Atlas cluster
-Managing the database connection
-Organizing the GitHub repository
+- Creating the MongoDB Atlas cluster
+- Managing the database connection
+- Organizing the GitHub repository
 
 🔍 Query Developer
 Responsible for:
