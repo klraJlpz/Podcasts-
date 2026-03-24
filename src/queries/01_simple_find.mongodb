@@ -1,0 +1,14 @@
+/ 1. findOne() → obtener un usuario
+db.users.findOne()
+
+// 2. find() → obtener todos los usuarios
+db.users.find()
+
+// 3. Filtro → usuarios activos
+db.users.find({ active_status: true })
+
+// 4. Proyección → solo nombre y email
+db.users.find(
+  { active_status: true },
+  { name: 1, email: 1, _id: 0 }
+)
