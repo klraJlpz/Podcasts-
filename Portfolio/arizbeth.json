@@ -1,1 +1,35 @@
-
+{
+  "personalInformation": {
+    "firstName": "Arizbeth",
+    "lastName": "Martinez Rendon",
+    "address": "SanI",
+    "age": 18,
+    "dateOfBirth": "2009-09-14",
+    "hobbies": [
+      "Playing soccer",
+    ],
+    "friends": [
+      "firstName": "Klara Karime",
+    "lastName": "Jacome Lopez",
+    "address": "col.Loma linda",
+    "age": 17,
+    "dateOfBirth": "2009-12-09",
+    "hobbies": "dessert",[
+    ],
+    "friends": [
+      "firstName": "Dilan Guillermo",
+    "lastName": "xochiquixtle diaz",
+    "address": "san miguel",
+    "age": 17,
+    "dateOfBirth": "2009-01-11",
+    "hobbies": "sports",[
+    ],
+    "friends": [
+      "firstName": "Uriel",
+    "lastName": "lopez",
+    "address": "buena vista",
+    "age": 16,
+    "dateOfBirth": "2009-07-20",
+    "hobbies": "gym",[
+    ]
+  
