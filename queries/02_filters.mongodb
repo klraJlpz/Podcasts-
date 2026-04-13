@@ -1,1 +1,20 @@
+// Users older than 17
+db.users.find({ age: { $gt: 17 } })
 
+// Users younger than 18
+db.users.find({ age: { $lt: 18 } })
+
+// Users not active
+db.users.find({ active_status: { $ne: true } })
+
+// Users with specific roles
+db.users.find({ role: { $in: ["listener", "creator"] } })
+
+// Combined filter: age > 17 AND active
+db.users.find({
+  age: { $gt: 17 },
+  active_status: true
+})
+
+// Users NOT creators
+db.users.find({ role: { $ne: "creator" } })
