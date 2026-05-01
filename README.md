@@ -163,9 +163,9 @@ The project was developed using **Scrum methodology**, dividing the work into it
   ]
 }
 ```
-# *🔹️Team Responsibilities*
+## *🔹️Team Responsibilities*
 
-🐋 Data Modeler
+🐟 Data Modeler
 
 
 •Designing document structures
