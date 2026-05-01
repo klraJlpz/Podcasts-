@@ -135,7 +135,33 @@ The project was developed using **Scrum methodology**, dividing the work into it
 - **GitHub** — Version control  
 
 ---
+## 👥 Team Data
 
+```json
+{
+  "teamName": "Equipo NoSQL Podcast Project",
+  "project": "Streaming Podcast Manager (Audio)",
+  "team": [
+    {
+      "firstName": "Klara Karime",
+      "lastName": "Jácome López",
+      "role": "Scrum Master",
+      "age": 16
+    },
+    {
+      "firstName": "Maria Isabel",
+      "lastName": "Baigen Jarillo",
+      "role": "The Data Modeler",
+      "age": 16
+    },
+    {
+      "firstName": "Dilan Guillermo",
+      "lastName": "Xochiquixtle Díaz",
+      "role": "The Query Developer",
+      "age": 16
+    }
+  ]
+}
 👥 Team Responsibilities
 🐋 Data Modeler
 
