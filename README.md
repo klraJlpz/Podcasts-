@@ -138,6 +138,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 ## 🔷️ Team Data
 
 ```json
+
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager (Audio)",
@@ -158,6 +159,18 @@ The project was developed using **Scrum methodology**, dividing the work into it
       "firstName": "Dilan Guillermo",
       "lastName": "Xochiquixtle Díaz",
       "role": "The Query Developer",
+      "age": 17
+    },
+    {
+      "firstName": "Iván Mauricio",
+      "lastName": "Morales Olguín",
+      "role": "The Integration Specialist",
+      "age": 17
+    },
+    {
+      "firstName": "Ariz",
+      "lastName": "",
+      "role": "The Data Seeder / QA",
       "age": 16
     }
   ]
