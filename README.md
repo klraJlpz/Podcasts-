@@ -163,9 +163,9 @@ The project was developed using **Scrum methodology**, dividing the work into it
   ]
 }
 ```
-## *🔹️Team Responsibilities*
+## 🔹️Team Responsibilities
 
-🐟 Data Modeler
+🐟 **Data Modeler**
 
 
 •Designing document structures
@@ -177,7 +177,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 •Applying embedding and referencing
 
 
-🐳 Integration Specialist
+🐳 **Integration Specialist**
 
 
 •Managing MongoDB Atlas setup
@@ -189,7 +189,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 •Organizing repository structure
 
 
-🐬 Query Developer
+🐬 **Query Developer**
 
 
 •Developing queries (basic, filters, logic)
@@ -201,7 +201,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 •Validating query results
 
 
-🪼 Data Seeder / QA
+🪼 **Data Seeder / QA**
 
 
 •Generating realistic JSON data
@@ -213,7 +213,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 •Testing system behavior
 
 
-🪷 Scrum Master
+🪷 **Scrum Master**
 
 
 •Managing sprints and tasks
@@ -226,7 +226,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 
 
-# *🔹️AI-Assisted Development*
+## 🔹️AI-Assisted Development
 
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 AI Contributions
@@ -245,7 +245,7 @@ AI Contributions
 
 
 
-# *🔹️Learning Outcomes*
+## 🔹️Learning Outcomes
 
 
 •NoSQL data modeling
@@ -263,7 +263,7 @@ AI Contributions
 •Agile teamwork using Scrum
 
 
-📃 Student Pledge
+## 📃 Student Pledge
 
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process.
