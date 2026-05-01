@@ -268,7 +268,11 @@ AI Contributions
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process.
 
-### Full Report
+### 📃 Work Record:
 
 [See Report](WORKLOG.md)
+
+### 📄 Detailed report:
+
+
 
