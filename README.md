@@ -1,90 +1,263 @@
-# 🎙 Streaming Podcast Manager (Audio)
 
-## 📌 Project Overview
 
-**Streaming Podcast Manager** is a **NoSQL-based application** designed to manage podcast content using a **document-oriented architecture**.
+🎙️ Streaming Podcast Manager (Audio)
+
+
+---
+
+📌 Project Overview
+
+Streaming Podcast Manager is a NoSQL-based application designed to manage podcast content using a document-oriented architecture.
 
 The platform allows users to manage:
 
-- 🎧 **Podcasts**
-- 📻 **Episodes**
-- 👤 **Users**
-- 📂 **Playlists**
-- ⭐ **Reviews**
+🎧 Podcasts
 
-The main concept of the system is:
+📻 Episodes
 
-> **A podcast is represented as a document that contains episode data and creator metadata.**
+👤 Users
 
-This project demonstrates how **NoSQL databases can model real-world streaming platforms** using flexible document structures.
+📂 Playlists
 
----
+⭐ Reviews
 
-# System Architecture
 
-The application follows a **document-based architecture**.
+> A podcast is represented as a document that contains episode data and creator metadata.
 
-Instead of traditional relational tables, the system stores information as **documents inside collections**.
 
-### Core Concept
 
-A **Podcast Document** contains:
+This project demonstrates how NoSQL databases can model real-world streaming platforms using flexible document structures.
 
-- Podcast metadata  
-- Creator information  
-- Embedded episodes  
-
-This structure allows:
-
-- ✔ Flexible schema  
-- ✔ Faster data retrieval  
-- ✔ Better scalability for streaming platforms  
 
 ---
 
-# Database Model
+🧠 System Architecture
+
+The application follows a document-based architecture.
+
+Instead of traditional relational tables, the system stores information as:
+
+Documents
+
+Collections
+
+JSON/BSON structures
+
+
+🔑 Core Concept
+
+A Podcast Document contains:
+
+Podcast metadata
+
+Creator information
+
+Embedded episodes
+
+
+✅ Advantages
+
+✔ Flexible schema
+
+✔ Faster data retrieval
+
+✔ Better scalability
+
+
+
+---
+
+🗂️ Database Model
 
 This project uses:
 
-- **MongoDB** as the NoSQL database
-- **MongoDB Atlas** for cloud database hosting
+MongoDB as the NoSQL database
 
-Data is stored as **JSON/BSON documents** organized in collections.
+MongoDB Atlas for cloud database hosting
+
+
+Data is stored as:
+
+JSON documents
+
+BSON format internally
+
+
 
 ---
 
-## Main Collections
+📊 Main Collections
 
-| Collection | Description |
-|-------------|-------------|
-| **users** | Stores
+users
+
+Stores user information (name, email, age, role, active status)
+
+
+podcasts
+
+Contains podcast metadata and embedded episodes
+
+
+playlists
+
+Stores collections of podcast episodes
+
+
+reviews
+
+Stores user feedback and ratings
 
 
 
-## Technologies Used
-**The following technologies were used during development:**
 
-- ***MongoDB*** — NoSQL database
-- ***MongoDB Atlas*** — cloud database service
-- ***MongoDB Compass*** — database visualization tool
-- ***Figma*** — mobile interface framework
-- ***Visual Studio Code*** — development environment
-- ***GitHub*** — version control and collaboration platform
+---
 
-## 👥 Team Data
+🔍 Query System
 
-```json
+The project implements MongoDB Query Language (MQL).
+
+🔹 Basic Queries
+
+find()
+
+findOne()
+
+
+🔹 Filters
+
+$gt
+
+$lt
+
+$in
+
+$ne
+
+
+🔹 Logical Operators
+
+$and
+
+$or
+
+$not
+
+
+🎯 Capabilities
+
+Efficient data retrieval
+
+Conditional filtering
+
+Complex queries
+
+
+
+---
+
+🧪 Data Seeding & Validation
+
+To simulate real-world conditions:
+
+✔ 50+ users generated
+
+✔ Data inserted using insertMany()
+
+✔ Queries tested and validated
+
+
+
+---
+
+📱 UI Design
+
+The interface was:
+
+Designed in Figma
+
+Partially implemented in Flutter
+
+
+Features:
+
+Podcast browsing
+
+Episode visualization
+
+Basic navigation
+
+
+
+---
+
+🧩 Development Methodology
+
+The project followed Scrum methodology:
+
+🚀 Sprints
+
+Sprint 1
+
+Data modeling & database setup
+
+
+Sprint 2
+
+Data seeding & basic queries
+
+
+Sprint 3
+
+Filters implementation
+
+
+Sprint 4
+
+Logical queries
+
+
+Sprint 5
+
+Integration & UI
+
+
+
+
+---
+
+⚙️ Technologies Used
+
+MongoDB — NoSQL database
+
+MongoDB Atlas — Cloud database service
+
+MongoDB Compass — Visualization tool
+
+Flutter — UI framework
+
+Figma — UI design
+
+Visual Studio Code — Development environment
+
+GitHub — Version control
+
+
+
+---
+
+👥 Team Data
+
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager (Audio)",
   "team": [
-{
+    {
       "firstName": "Klara Karime",
       "lastName": "Jácome López",
-      "role": "The Data Seeder / QA",
+      "role": "Scrum Master",
       "age": 16
     },
-     {
+    {
       "firstName": "Maria Isabel",
       "lastName": "Baigen Jarillo",
       "role": "The Data Modeler",
@@ -101,65 +274,112 @@ Data is stored as **JSON/BSON documents** organized in collections.
       "lastName": "Morales Olguín",
       "role": "The Integration Specialist",
       "age": 16
+    },
+    {
+      "firstName": "Ariz",
+      "lastName": "",
+      "role": "The Data Seeder / QA",
+      "age": 16
     }
   ]
 }
-```
 
 
-# Team Responsibilities
+---
 
-****🐋 Data Modeler****
+👨‍💻 Team Responsibilities
 
-Responsible for:
-- Designing the document structure
-- Defining collections
-- Deciding between embedding vs referencing
+🐋 Data Modeler
 
-****🐳 Integration Specialist****
+Designing document structures
 
-Responsible for:
-- Creating the MongoDB Atlas cluster
-- Managing the database connection
-- Organizing the GitHub repository
+Defining collections
 
- ****🐬 Query Developer****
+Applying embedding and referencing
 
-Responsible for:
-- Creating database queries
-- Retrieving and filtering data
-- Testing query performance
 
-****🪼 Data Seeder / QA****
+🐳 Integration Specialist
 
-Responsible for:
-- Generating mock data using JSON
-- Inserting documents into the database
-- Validating queries and identifying bugs
+Managing MongoDB Atlas
 
-# AI-Assisted Development
+Ensuring system integration
 
-During the development of this project the team used ChatGPT as a Senior NoSQL Mentor.
+Organizing repository
 
-The AI helped the team to:
 
-- Understand NoSQL architecture concepts
-- Generate JSON examples
-- Explain database modeling strategies
-- Validate technical decisions
+🐬 Query Developer
 
-This helped improve the learning process and technical understanding of the team.
+Developing queries
 
-# Learning Outcomes
+Implementing filters and logic
 
-Through this project the team learned:
+Validating results
 
-- How to design NoSQL document architectures
-- How to structure JSON/BSON documents
-- How to deploy databases using MongoDB Atlas
-- How to collaborate using GitHub version control
 
-# 📃 Student Pledge 
+🪼 Data Seeder / QA
+
+Generating JSON data
+
+Inserting documents
+
+Testing queries
+
+
+🧠 Scrum Master
+
+Managing sprints
+
+Coordinating team
+
+Organizing workflow
+
+
+
+---
+
+🤖 AI-Assisted Development
+
+During the project, the team used:
+
+ChatGPT
+
+Abacus.AI
+
+
+🔍 Purpose:
+
+Understanding NoSQL concepts
+
+Generating examples
+
+Debugging queries
+
+Improving documentation
+
+
+
+---
+
+🎯 Learning Outcomes
+
+NoSQL data modeling
+
+JSON/BSON structures
+
+MongoDB query development
+
+Cloud database deployment
+
+Scrum teamwork
+
+
+
+---
+
+📃 Student Pledge
 
 All team members reviewed and validated the code included in this repository.
-This project represents our own work and reflects our learning process throughout the course. 
+
+This project represents our own work and reflects our learning process.
+
+
