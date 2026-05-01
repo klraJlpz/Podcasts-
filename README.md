@@ -162,6 +162,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
     }
   ]
 }
+```
 👥 Team Responsibilities
 🐋 Data Modeler
 
