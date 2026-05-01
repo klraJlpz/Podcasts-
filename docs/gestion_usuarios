@@ -1,0 +1,13 @@
+
+erDiagram
+    GESTION_USUARIOS {
+        int id
+        string historia_usuario
+        string descripcion
+        string criterios_aceptacion
+        string prioridad
+    }
+
+    GESTION_USUARIOS : "1, registro de usuario, como usuario quiero registrarme para usar la app, guardar nombre/email/usuario, alta"
+    GESTION_USUARIOS : "2, ver usuarios, como desarrollador quiero ver usuarios, uso de find(), alta"
+    GESTION_USUARIOS : "3, filtrar usuarios activos, como sistema quiero usuarios activos, uso de active:true, media"w
