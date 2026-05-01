@@ -215,7 +215,7 @@ Ensuring project organization
 
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 
-• AI Contributions
+**AI Contributions**
 
 Understanding NoSQL concepts
 
