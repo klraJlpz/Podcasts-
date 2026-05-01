@@ -162,4 +162,4 @@ Through this project the team learned:
 # 📃 Student Pledge 
 
 All team members reviewed and validated the code included in this repository.
-This project represents our own work and reflects our learning process throughout the course.
+This project represents our own work and reflects our learning process throughout the course. 
