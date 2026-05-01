@@ -270,5 +270,5 @@ This project represents our own work and reflects our learning process.
 
 ### Full Report
 
-[Ver instalación](WORKLOG.md)
+[See Report](WORKLOG.md)
 
