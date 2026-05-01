@@ -1,0 +1,17 @@
+```mermaid
+erDiagram
+    QUERIES {
+        int id
+        string historia
+        string criterios
+    }
+
+    QUERIES : "1, find(), consulta general"
+    QUERIES : "2, findOne(), consulta individual"
+    QUERIES : "3, proyeccion, mostrar campos"
+    QUERIES : "4, comparaciones, $gt $lt $ne"
+    QUERIES : "5, listas, $in"
+    QUERIES : "6, AND, $and"
+    QUERIES : "7, OR, $or"
+    QUERIES : "8, NOT, $not"
+```
