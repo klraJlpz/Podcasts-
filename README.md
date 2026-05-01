@@ -274,4 +274,4 @@ This project represents our own work and reflects our learning process.
 
 ### 📄 Detailed report:
 
-[Ver instalación](Individual_Report.md)
+[Ver instalación](Portfolio/Individual_Report.md)
