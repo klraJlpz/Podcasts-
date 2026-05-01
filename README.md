@@ -167,61 +167,61 @@ The project was developed using **Scrum methodology**, dividing the work into it
 🐋 Data Modeler
 
 
-Designing document structures
+•Designing document structures
 
 
-Defining collections
+•Defining collections
 
 
-Applying embedding and referencing
+•Applying embedding and referencing
 
 
 🐳 Integration Specialist
 
 
-Managing MongoDB Atlas setup
+•Managing MongoDB Atlas setup
 
 
-Ensuring system integration
+•Ensuring system integration
 
 
-Organizing repository structure
+•Organizing repository structure
 
 
 🐬 Query Developer
 
 
-Developing queries (basic, filters, logic)
+•Developing queries (basic, filters, logic)
 
 
-Implementing MQL operators
+•Implementing MQL operators
 
 
-Validating query results
+•Validating query results
 
 
 🪼 Data Seeder / QA
 
 
-Generating realistic JSON data
+•Generating realistic JSON data
 
 
-Inserting and validating data
+•Inserting and validating data
 
 
-Testing system behavior
+•Testing system behavior
 
 
 🪷 Scrum Master
 
 
-Managing sprints and tasks
+•Managing sprints and tasks
 
 
-Coordinating team workflow
+•Coordinating team workflow
 
 
-Ensuring project organization
+•Ensuring project organization
 
 
 
@@ -230,32 +230,32 @@ During the development of this project, the team used AI tools such as ChatGPT a
 AI Contributions
 
 
-Understanding NoSQL concepts
+•Understanding NoSQL concepts
 
 
-Generating query examples
+•Generating query examples
 
 
-Debugging errors
+•Debugging errors
 
 
-Improving documentation
+•Improving documentation
 
 
 
 🎓 Learning Outcomes
 
 
-+NoSQL data modeling
+•NoSQL data modeling
 
 
-JSON/BSON structure design
+•JSON/BSON structure design
 
 
-MongoDB query development
+•MongoDB query development
 
 
-Cloud database deployment
+•Cloud database deployment
 
 
 Agile teamwork using Scrum
