@@ -262,7 +262,3 @@ Agile teamwork using Scrum
 
 
 
-📃 Student Pledge
-All team members reviewed and validated the code included in this repository.
-This project represents our own work and reflects our learning process.
----## 🔑 Lo importante (por si vuelve a fallar)- El bloque ```json **se abre y se cierra correctamente**- Después hay un `---` para separar- Luego ya puedes usar `##` sin problema---Si todavía se ve rojo después de esto, entonces el error está **más arriba en tu README**, no aquí.  Si quieres, mándame el archivo completo y te digo exactamente en qué línea se rompe 👍
