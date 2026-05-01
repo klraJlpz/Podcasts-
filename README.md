@@ -169,7 +169,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
     },
     {
       "firstName": "Ariz",
-      "lastName": "",
+      "lastName": "Martinez Rendon",
       "role": "The Data Seeder / QA",
       "age": 16
     }
