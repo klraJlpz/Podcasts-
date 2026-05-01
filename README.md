@@ -162,8 +162,6 @@ The project was developed using **Scrum methodology**, dividing the work into it
       "age": 16
     },
 
-
-
 ## Team Responsibilities
 
 🐋 Data Modeler
