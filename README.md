@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Project Overview
+## 💠 Project Overview
 
 **Streaming Podcast Manager** is a *NoSQL-based application* designed to manage podcast content using a **document-oriented architecture**.
 
@@ -20,7 +20,7 @@ This project demonstrates how **NoSQL databases can model real-world streaming p
 
 ---
 
-## 🧠 System Architecture
+## 🔹️ System Architecture
 
 The application follows a **document-based architecture**.
 
@@ -34,7 +34,7 @@ A **Podcast Document** contains:
 - Creator information  
 - Embedded episodes  
 
-### ✔ Benefits
+### 🔹️Benefits
 
 - ✔ Flexible schema  
 - ✔ Faster data retrieval  
@@ -42,7 +42,7 @@ A **Podcast Document** contains:
 
 ---
 
-## 🗂 Database Model
+## 🔹️ Database Model
 
 This project uses:
 
@@ -53,7 +53,7 @@ Data is stored as **JSON/BSON documents** organized in collections.
 
 ---
 
-## 📊 Main Collections
+## 🔹️ Main Collections
 
 | Collection | Description |
 |------------|------------|
@@ -64,7 +64,7 @@ Data is stored as **JSON/BSON documents** organized in collections.
 
 ---
 
-## 🔍 Query System
+## 🔹️ Query System
 
 The project includes a structured implementation of **MongoDB Query Language (MQL)**.
 
@@ -80,7 +80,7 @@ The project includes a structured implementation of **MongoDB Query Language (MQ
 - *Logical Operators*
   - `$and`, `$or`, `$not`
 
-### ✔ Capabilities
+### 🔹️ Capabilities
 
 - Efficient data retrieval  
 - Conditional filtering  
@@ -88,7 +88,7 @@ The project includes a structured implementation of **MongoDB Query Language (MQ
 
 ---
 
-## 🧪 Data Seeding & Validation
+## 🔹️ Data Seeding & Validation
 
 To simulate a real-world environment:
 
@@ -98,7 +98,7 @@ To simulate a real-world environment:
 
 ---
 
-## 📱 UI Design
+## 🔹️ UI Design
 
 The user interface was designed using **Figma** and partially implemented using **Flutter**.
 
@@ -110,7 +110,7 @@ The user interface was designed using **Figma** and partially implemented using 
 
 ---
 
-## 🧩 Development Methodology
+## 🔹️ Development Methodology
 
 The project was developed using **Scrum methodology**, dividing the work into iterative sprints:
 
@@ -124,7 +124,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 ---
 
-## ⚙️ Technologies Used
+## 🔹️ Technologies Used
 
 - **MongoDB** — NoSQL database  
 - **MongoDB Atlas** — Cloud database service  
@@ -135,7 +135,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 - **GitHub** — Version control  
 
 ---
-## 👥 Team Data
+## 🔷️ Team Data
 
 ```json
 {
@@ -163,7 +163,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
   ]
 }
 ```
-# *Team Responsibilities*
+# *🔹️Team Responsibilities*
 
 🐋 Data Modeler
 
@@ -226,7 +226,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 
 
-# *AI-Assisted Development*
+# *🔹️AI-Assisted Development*
 
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 AI Contributions
@@ -245,7 +245,7 @@ AI Contributions
 
 
 
-# *Learning Outcomes*
+# *🔹️Learning Outcomes*
 
 
 •NoSQL data modeling
@@ -267,6 +267,8 @@ AI Contributions
 
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process.
+
+---
 
 ### 📃 Work Record
 
