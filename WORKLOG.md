@@ -34,7 +34,7 @@ El proyecto se estructuró en diferentes áreas clave:
 - Filtros ($gt, $lt, $in, $ne)  
 - Lógica ($and, $or, $not)  
 - Testing y validación  
-- Interfaz en Flutter  
+- Interfaz en Visual Studio code 
 
 Este backlog permitió organizar el desarrollo de forma progresiva.  
 
@@ -89,7 +89,7 @@ Este backlog permitió organizar el desarrollo de forma progresiva.
 **Actividades:**  
 - Integración del sistema  
 - Diseño de interfaz en Figma  
-- Desarrollo básico en Flutter  
+- Desarrollo básico en Visual  
 - Organización del repositorio en GitHub    
 
 ---
