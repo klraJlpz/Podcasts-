@@ -1,0 +1,14 @@
+```mermaid
+erDiagram
+    TESTING_INTERFAZ {
+        int id
+        string historia
+        string criterios
+    }
+
+    TESTING_INTERFAZ : "1, validar queries, resultados correctos"
+    TESTING_INTERFAZ : "2, probar datos, funcionan en atlas"
+    TESTING_INTERFAZ : "3, pantalla principal, lista de podcast"
+    TESTING_INTERFAZ : "4, detalle, ver episodios"
+    TESTING_INTERFAZ : "5, UI basado en figma, diseño funcional"
+```
