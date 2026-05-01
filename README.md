@@ -164,7 +164,7 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 
 
-● Team Responsibilities
+## Team Responsibilities
 
 🐋 Data Modeler
 
@@ -211,7 +211,7 @@ Coordinating team workflow
 Ensuring project organization
 
 
-●AI-Assisted Development
+## AI-Assisted Development
 
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 
@@ -227,7 +227,7 @@ Improving documentation
 
 
 
-● Learning Outcomes
+## Learning Outcomes
 
 NoSQL data modeling
 
