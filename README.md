@@ -270,8 +270,8 @@ This project represents our own work and reflects our learning process.
 
 ### 📃 Work Record:
 
-[See Report](WORKLOG.md)
+[📍See Report](WORKLOG.md)
 
-### 📄 Detailed report:
+### 📝 Detailed individual report:
 
-[Ver instalación](Portfolio/Individual_Report.md)
+[📍See Report](Portfolio/Individual_Report.md)
