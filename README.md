@@ -246,7 +246,7 @@ GitHub — Version control
 ---
 
 👥 Team Data
-
+```
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager (Audio)",
@@ -283,7 +283,7 @@ GitHub — Version control
     }
   ]
 }
-
+```
 
 ---
 
