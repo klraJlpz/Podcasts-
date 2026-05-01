@@ -1,252 +1,144 @@
-
-
-🎙️ Streaming Podcast Manager (Audio)
-
+# 🎙 Streaming Podcast Manager (Audio)
 
 ---
 
-📌 Project Overview
+## 📌 Project Overview
 
-Streaming Podcast Manager is a NoSQL-based application designed to manage podcast content using a document-oriented architecture.
+**Streaming Podcast Manager** is a *NoSQL-based application* designed to manage podcast content using a **document-oriented architecture**.
 
 The platform allows users to manage:
 
-🎧 Podcasts
+- 🎧 **Podcasts**  
+- 📻 **Episodes**  
+- 👤 **Users**  
+- 📂 **Playlists**  
+- ⭐ **Reviews**
 
-📻 Episodes
+> **A podcast is represented as a document that contains episode data and creator metadata.**
 
-👤 Users
-
-📂 Playlists
-
-⭐ Reviews
-
-
-> A podcast is represented as a document that contains episode data and creator metadata.
-
-
-
-This project demonstrates how NoSQL databases can model real-world streaming platforms using flexible document structures.
-
+This project demonstrates how **NoSQL databases can model real-world streaming platforms** using flexible document structures.
 
 ---
 
-🧠 System Architecture
+## 🧠 System Architecture
 
-The application follows a document-based architecture.
+The application follows a **document-based architecture**.
 
-Instead of traditional relational tables, the system stores information as:
+Instead of traditional relational tables, the system stores information as **documents inside collections**.
 
-Documents
+### 🔹 Core Concept
 
-Collections
+A **Podcast Document** contains:
 
-JSON/BSON structures
+- Podcast metadata  
+- Creator information  
+- Embedded episodes  
 
+### ✔ Benefits
 
-🔑 Core Concept
-
-A Podcast Document contains:
-
-Podcast metadata
-
-Creator information
-
-Embedded episodes
-
-
-✅ Advantages
-
-✔ Flexible schema
-
-✔ Faster data retrieval
-
-✔ Better scalability
-
-
+- ✔ Flexible schema  
+- ✔ Faster data retrieval  
+- ✔ Better scalability  
 
 ---
 
-🗂️ Database Model
+## 🗂 Database Model
 
 This project uses:
 
-MongoDB as the NoSQL database
+- **MongoDB** as the NoSQL database  
+- **MongoDB Atlas** for cloud database hosting  
 
-MongoDB Atlas for cloud database hosting
-
-
-Data is stored as:
-
-JSON documents
-
-BSON format internally
-
-
+Data is stored as **JSON/BSON documents** organized in collections.
 
 ---
 
-📊 Main Collections
+## 📊 Main Collections
 
-users
-
-Stores user information (name, email, age, role, active status)
-
-
-podcasts
-
-Contains podcast metadata and embedded episodes
-
-
-playlists
-
-Stores collections of podcast episodes
-
-
-reviews
-
-Stores user feedback and ratings
-
-
-
+| Collection | Description |
+|------------|------------|
+| **users** | Stores user information (name, email, age, role, active status) |
+| **podcasts** | Contains podcast metadata and embedded episodes |
+| **playlists** | Stores collections of podcast episodes |
+| **reviews** | Stores user feedback and ratings |
 
 ---
 
-🔍 Query System
+## 🔍 Query System
 
-The project implements MongoDB Query Language (MQL).
+The project includes a structured implementation of **MongoDB Query Language (MQL)**.
 
-🔹 Basic Queries
+### 🔹 Implemented Queries
 
-find()
+- *Basic Queries*
+  - `find()`
+  - `findOne()`
 
-findOne()
+- *Filters*
+  - `$gt`, `$lt`, `$in`, `$ne`
 
+- *Logical Operators*
+  - `$and`, `$or`, `$not`
 
-🔹 Filters
+### ✔ Capabilities
 
-$gt
-
-$lt
-
-$in
-
-$ne
-
-
-🔹 Logical Operators
-
-$and
-
-$or
-
-$not
-
-
-🎯 Capabilities
-
-Efficient data retrieval
-
-Conditional filtering
-
-Complex queries
-
-
+- Efficient data retrieval  
+- Conditional filtering  
+- Complex data analysis  
 
 ---
 
-🧪 Data Seeding & Validation
+## 🧪 Data Seeding & Validation
 
-To simulate real-world conditions:
+To simulate a real-world environment:
 
-✔ 50+ users generated
-
-✔ Data inserted using insertMany()
-
-✔ Queries tested and validated
-
-
+- ✔ 50+ user documents were generated  
+- ✔ Data was inserted using `insertMany()`  
+- ✔ Queries were tested and validated  
 
 ---
 
-📱 UI Design
+## 📱 UI Design
 
-The interface was:
+The user interface was designed using **Figma** and partially implemented using **Flutter**.
 
-Designed in Figma
+### 🔹 Features
 
-Partially implemented in Flutter
-
-
-Features:
-
-Podcast browsing
-
-Episode visualization
-
-Basic navigation
-
-
+- Podcast browsing  
+- Episode visualization  
+- Basic navigation  
 
 ---
 
-🧩 Development Methodology
+## 🧩 Development Methodology
 
-The project followed Scrum methodology:
+The project was developed using **Scrum methodology**, dividing the work into iterative sprints:
 
-🚀 Sprints
-
-Sprint 1
-
-Data modeling & database setup
-
-
-Sprint 2
-
-Data seeding & basic queries
-
-
-Sprint 3
-
-Filters implementation
-
-
-Sprint 4
-
-Logical queries
-
-
-Sprint 5
-
-Integration & UI
-
-
-
+| Sprint | Focus |
+|--------|------|
+| **Sprint 1** | Data modeling & database setup |
+| **Sprint 2** | Data seeding & basic queries |
+| **Sprint 3** | Filters implementation |
+| **Sprint 4** | Logical queries |
+| **Sprint 5** | Integration & UI |
 
 ---
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 
-MongoDB — NoSQL database
-
-MongoDB Atlas — Cloud database service
-
-MongoDB Compass — Visualization tool
-
-Flutter — UI framework
-
-Figma — UI design
-
-Visual Studio Code — Development environment
-
-GitHub — Version control
-
-
+- **MongoDB** — NoSQL database  
+- **MongoDB Atlas** — Cloud database service  
+- **MongoDB Compass** — Database visualization tool  
+- **Flutter** — UI framework  
+- **Figma** — UI design tool  
+- **Visual Studio Code** — Development environment  
+- **GitHub** — Version control  
 
 ---
 
-👥 Team Data
-```
+## 👥 Team Data
+
+```json
 {
   "teamName": "Equipo NoSQL Podcast Project",
   "project": "Streaming Podcast Manager (Audio)",
@@ -269,117 +161,4 @@ GitHub — Version control
       "role": "The Query Developer",
       "age": 16
     },
-    {
-      "firstName": "Iván Mauricio",
-      "lastName": "Morales Olguín",
-      "role": "The Integration Specialist",
-      "age": 16
-    },
-    {
-      "firstName": "Ariz",
-      "lastName": "",
-      "role": "The Data Seeder / QA",
-      "age": 16
-    }
-  ]
-}
-```
-
----
-
-👨‍💻 Team Responsibilities
-
-🐋 Data Modeler
-
-Designing document structures
-
-Defining collections
-
-Applying embedding and referencing
-
-
-🐳 Integration Specialist
-
-Managing MongoDB Atlas
-
-Ensuring system integration
-
-Organizing repository
-
-
-🐬 Query Developer
-
-Developing queries
-
-Implementing filters and logic
-
-Validating results
-
-
-🪼 Data Seeder / QA
-
-Generating JSON data
-
-Inserting documents
-
-Testing queries
-
-
-🧠 Scrum Master
-
-Managing sprints
-
-Coordinating team
-
-Organizing workflow
-
-
-
----
-
-🤖 AI-Assisted Development
-
-During the project, the team used:
-
-ChatGPT
-
-Abacus.AI
-
-
-🔍 Purpose:
-
-Understanding NoSQL concepts
-
-Generating examples
-
-Debugging queries
-
-Improving documentation
-
-
-
----
-
-🎯 Learning Outcomes
-
-NoSQL data modeling
-
-JSON/BSON structures
-
-MongoDB query development
-
-Cloud database deployment
-
-Scrum teamwork
-
-
-
----
-
-📃 Student Pledge
-
-All team members reviewed and validated the code included in this repository.
-
-This project represents our own work and reflects our learning process.
-
 
