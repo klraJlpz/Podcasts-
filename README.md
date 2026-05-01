@@ -136,43 +136,106 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 ---
 
-## 👥 Team Data
-
-```json
-{
-  "teamName": "Equipo NoSQL Podcast Project",
-  "project": "Streaming Podcast Manager (Audio)",
-  "team": [
-    {
-      "firstName": "Klara Karime",
-      "lastName": "Jácome López",
-      "role": "Scrum Master",
-      "age": 16
-    },
-    {
-      "firstName": "Maria Isabel",
-      "lastName": "Baigen Jarillo",
-      "role": "The Data Modeler",
-      "age": 16
-    },
-    {
-      "firstName": "Dilan Guillermo",
-      "lastName": "Xochiquixtle Díaz",
-      "role": "The Query Developer",
-      "age": 16
-    }
-  ]
-}
+👥 Team Responsibilities
+🐋 Data Modeler
 
 
-### Learning Outcomes
+Designing document structures
+
+
+Defining collections
+
+
+Applying embedding and referencing
+
+
+🐳 Integration Specialist
+
+
+Managing MongoDB Atlas setup
+
+
+Ensuring system integration
+
+
+Organizing repository structure
+
+
+🐬 Query Developer
+
+
+Developing queries (basic, filters, logic)
+
+
+Implementing MQL operators
+
+
+Validating query results
+
+
+🪼 Data Seeder / QA
+
+
+Generating realistic JSON data
+
+
+Inserting and validating data
+
+
+Testing system behavior
+
+
+🪷 Scrum Master
+
+
+Managing sprints and tasks
+
+
+Coordinating team workflow
+
+
+Ensuring project organization
+
+
+
+🤖 AI-Assisted Development
+During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
+AI Contributions
+
+
+Understanding NoSQL concepts
+
+
+Generating query examples
+
+
+Debugging errors
+
+
+Improving documentation
+
+
+
+🎓 Learning Outcomes
+
+
 NoSQL data modeling
+
+
 JSON/BSON structure design
+
+
 MongoDB query development
+
+
 Cloud database deployment
+
+
 Agile teamwork using Scrum
 
-📃 Student Pledge
 
+
+📃 Student Pledge
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process.
+---## 🔑 Lo importante (por si vuelve a fallar)- El bloque ```json **se abre y se cierra correctamente**- Después hay un `---` para separar- Luego ya puedes usar `##` sin problema---Si todavía se ve rojo después de esto, entonces el error está **más arriba en tu README**, no aquí.  Si quieres, mándame el archivo completo y te digo exactamente en qué línea se rompe 👍
