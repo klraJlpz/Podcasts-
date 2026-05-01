@@ -163,7 +163,8 @@ The project was developed using **Scrum methodology**, dividing the work into it
   ]
 }
 ```
-👥 Team Responsibilities
+# *Team Responsibilities*
+
 🐋 Data Modeler
 
 
@@ -225,7 +226,8 @@ The project was developed using **Scrum methodology**, dividing the work into it
 
 
 
-🤖 AI-Assisted Development
+# *AI-Assisted Development*
+
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 AI Contributions
 
@@ -243,7 +245,7 @@ AI Contributions
 
 
 
-🎓 Learning Outcomes
+# *Learning Outcomes*
 
 
 •NoSQL data modeling
@@ -258,7 +260,9 @@ AI Contributions
 •Cloud database deployment
 
 
-Agile teamwork using Scrum
+•Agile teamwork using Scrum
+
+
 📃 Student Pledge
 
 All team members reviewed and validated the code included in this repository.
