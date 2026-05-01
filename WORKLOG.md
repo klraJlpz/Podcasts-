@@ -12,7 +12,7 @@ El proyecto se organizó mediante la metodología Scrum, lo que permitió dividi
 
 ---
 
-## 🎯 2. Objetivo del Proyecto  
+##  2. Objetivo del Proyecto  
 
 Desarrollar una base de datos funcional en MongoDB que permita:  
 
@@ -23,7 +23,7 @@ Desarrollar una base de datos funcional en MongoDB que permita:
 
 ---
 
-## 📋 3. Product Backlog (Resumen)  
+##  3. Product Backlog (Resumen)  
 
 El proyecto se estructuró en diferentes áreas clave:  
 
@@ -40,7 +40,7 @@ Este backlog permitió organizar el desarrollo de forma progresiva.
 
 ---
 
-## 🚀 4. Desarrollo por Sprints  
+##  4. Desarrollo por Sprints  
 
 ### ♤ Sprint 1: Modelado y Base de Datos  
 **Objetivo:** Definir la estructura del sistema  
@@ -90,44 +90,11 @@ Este backlog permitió organizar el desarrollo de forma progresiva.
 - Integración del sistema  
 - Diseño de interfaz en Figma  
 - Desarrollo básico en Flutter  
-- Organización del repositorio en GitHub  
+- Organización del repositorio en GitHub    
 
 ---
 
-## 👥 5. Roles y Aportaciones del Equipo  
-
-### ☆ Iván — Integration Specialist  
-- Configuración de MongoDB Atlas  
-- Verificación de conexión y funcionamiento  
-- Integración general del sistema  
-- Organización técnica del proyecto  
-
-### ☆ Dilan — Query Developer  
-- Desarrollo de consultas (find, filtros, lógica)  
-- Implementación de operadores de MongoDB  
-- Optimización de queries  
-
-### ☆ María — Data Modeler  
-- Diseño del modelo de datos  
-- Definición de colecciones y estructura JSON  
-- Aplicación de embedding y referencing  
-- Creación del diagrama Mermaid  
-
-### ☆ Ariz — Data Seeder / QA  
-- Generación de datos de prueba  
-- Inserción de datos en la base  
-- Validación de consultas  
-- Verificación de resultados  
-
-### ☆ Klara — Scrum Master  
-- Organización del equipo  
-- Distribución de tareas  
-- Seguimiento de sprints  
-- Coordinación del proyecto  
-
----
-
-## 🤖 6. Uso de Inteligencia Artificial  
+##  6. Uso de Inteligencia Artificial  
 
 Durante el desarrollo del proyecto se utilizó la IA como herramienta de apoyo.  
 
@@ -140,7 +107,7 @@ Durante el desarrollo del proyecto se utilizó la IA como herramienta de apoyo.
 
 ---
 
-## ✅ 7. Validación del Sistema  
+##  7. Validación del Sistema  
 
 Para comprobar el correcto funcionamiento del proyecto se realizaron:  
 
