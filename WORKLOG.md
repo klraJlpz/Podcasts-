@@ -6,7 +6,7 @@
 ## 📌 1. Introducción  
 El presente proyecto tiene como objetivo el desarrollo de un sistema basado en NoSQL para la gestión de podcasts, utilizando una arquitectura orientada a documentos.  
 
-Se diseñó una solución que permite almacenar y consultar información sobre usuarios, podcasts, episodios y playlists, aplicando herramientas modernas como MongoDB Atlas, Flutter y Figma.  
+Se diseñó una solución que permite almacenar y consultar información sobre usuarios, podcasts, episodios y playlists, aplicando herramientas modernas como MongoDB Atlas, Visual stude Code y nexts.  
 
 El proyecto se organizó mediante la metodología Scrum, lo que permitió dividir el trabajo en sprints y distribuir responsabilidades de manera eficiente.  
 
