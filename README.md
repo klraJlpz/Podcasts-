@@ -246,7 +246,7 @@ Improving documentation
 🎓 Learning Outcomes
 
 
-NoSQL data modeling
++NoSQL data modeling
 
 
 JSON/BSON structure design
