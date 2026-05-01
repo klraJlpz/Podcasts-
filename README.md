@@ -162,84 +162,56 @@ The project was developed using **Scrum methodology**, dividing the work into it
       "age": 16
     },
 
-## Team Responsibilities
+##Team Responsibilities
 
-🐋 Data Modeler
+🐋 Data Modeler 
 
-Designing document structures
-
-Defining collections
-
-Applying embedding and referencing
-
+•Designing document structures
+•Defining collections
+•Applying embedding and referencing
 
 🐳 Integration Specialist
 
-Managing MongoDB Atlas setup
-
-Ensuring system integration
-
-Organizing repository structure
-
+•Managing MongoDB Atlas setup
+•Ensuring system integration
+•Organizing repository structure
 
 🐬 Query Developer
 
-Developing queries (basic, filters, logic)
-
-Implementing MQL operators
-
-Validating query results
-
+•Developing queries (basic, filters, logic)
+•Implementing MQL operators
+•Validating query results
 
 🪼 Data Seeder / QA
 
-Generating realistic JSON data
-
-Inserting and validating data
-
-Testing system behavior
-
+•Generating realistic JSON data
+•Inserting and validating data
+•Testing system behavior
 
 🪷 Scrum Master
 
-Managing sprints and tasks
+•Managing sprints and tasks
+•Coordinating team workflow
+•Ensuring project organization
 
-Coordinating team workflow
-
-Ensuring project organization
-
-
-## AI-Assisted Development
-
+### AI-Assisted Development
 During the development of this project, the team used AI tools such as ChatGPT and Abacus.AI.
 
-**AI Contributions**
-
-Understanding NoSQL concepts
-
-Generating query examples
-
-Debugging errors
-
-Improving documentation
+### AI Contributions
+-Understanding NoSQL concepts
+-Generating query examples
+-Debugging errors
+-Improving documentation
 
 
-
-## Learning Outcomes
-
+### Learning Outcomes
 NoSQL data modeling
-
 JSON/BSON structure design
-
 MongoDB query development
-
 Cloud database deployment
-
 Agile teamwork using Scrum
-
 
 📃 Student Pledge
 
 All team members reviewed and validated the code included in this repository.
 This project represents our own work and reflects our learning process.
-
