@@ -77,7 +77,7 @@ This project uses:
 | `users` | Core user documents (name, email, age, role, active status) |
 | `verificationtokens` | Email/account verification token management |
 
-### ❌ Deprecated Collections (No Longer Used)
+### 🔹 Deprecated Collections (No Longer Used)
 
 The following collections exist in the cluster but contain **no active data** and are kept only for historical reference:
 
@@ -89,7 +89,7 @@ The following collections exist in the cluster but contain **no active data** an
 
 ---
 
-## 🔍 Query System
+## 🔹 Query System
 
 The project includes a structured implementation of **MongoDB Query Language (MQL)**.
 
@@ -130,17 +130,17 @@ db.users.find({ active: { $not: { $eq: false } } })
 
 ---
 
-## ⚙️ Capabilities
+## 🔹Capabilities
 
-- ✅ Efficient data retrieval across 14 active collections
-- ✅ Conditional filtering with comparison operators
-- ✅ Complex data analysis with logical query chaining
-- ✅ Listening history and download tracking per user
-- ✅ Token-based authentication and session management
+- Efficient data retrieval across 14 active collections
+- Conditional filtering with comparison operators
+- Complex data analysis with logical query chaining
+- Listening history and download tracking per user
+- Token-based authentication and session management
 
 ---
 
-## 🌱 Data Seeding & Validation
+## 🔹 Data Seeding & Validation
 
 To simulate a real-world environment:
 
@@ -151,7 +151,7 @@ To simulate a real-world environment:
 
 ---
 
-## 🎨 UI Design
+## 🔹 UI Design
 
 The user interface was designed using **Figma** and partially implemented using **Flutter**.
 
@@ -163,7 +163,7 @@ The user interface was designed using **Figma** and partially implemented using 
 
 ---
 
-## 🏃 Development Methodology
+## 🔹 Development Methodology
 
 The project was developed using **Scrum**, dividing work into iterative sprints:
 
@@ -179,7 +179,7 @@ The project was developed using **Scrum**, dividing work into iterative sprints:
 
 ---
 
-## 🛠️ Technologies Used
+## 🔹 Technologies Used
 
 | Tool | Purpose |
 |---|---|
@@ -193,7 +193,7 @@ The project was developed using **Scrum**, dividing work into iterative sprints:
 
 ---
 
-## 👥 Team Data
+## 🔹 Team Data
 
 ```json
 {
@@ -236,7 +236,7 @@ The project was developed using **Scrum**, dividing work into iterative sprints:
 
 ---
 
-## 🧩 Team Responsibilities
+## 🔹 Team Responsibilities
 
 ### 🐟 Data Modeler
 - Designing document structures
@@ -265,7 +265,7 @@ The project was developed using **Scrum**, dividing work into iterative sprints:
 
 ---
 
-## 🤖 AI-Assisted Development
+## 🔹 AI-Assisted Development
 
 During development, the team used AI tools including **ChatGPT** and **Abacus.AI** for:
 
@@ -276,7 +276,7 @@ During development, the team used AI tools including **ChatGPT** and **Abacus.AI
 
 ---
 
-## 📚 Learning Outcomes
+## 🔹 Learning Outcomes
 
 - NoSQL data modeling with embedded and referenced documents
 - JSON/BSON document structure design
@@ -287,7 +287,7 @@ During development, the team used AI tools including **ChatGPT** and **Abacus.AI
 
 ---
 
-## 📃 Student Pledge
+## 🔹 Student Pledge
 
 All team members reviewed and validated the code included in this repository. This project represents our own work and reflects our learning process.
 
@@ -295,7 +295,7 @@ All team members reviewed and validated the code included in this repository. Th
 
 
 
-### 📃 Work Record
+### 🔹 Work Record
 
 *View the Project Report here:*
 
