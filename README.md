@@ -44,7 +44,7 @@ A **Podcast Document** contains:
 
 ---
 
-## 🗄️ Database Model
+## 🔹 Database Model
 
 This project uses:
 - **MongoDB** as the NoSQL database engine
@@ -56,9 +56,9 @@ This project uses:
 
 ---
 
-## 📂 Active Collections (English Only)
+## 🔹 Active Collections (English Only)
 
-> ⚠️ **Important:** During development, some collections were created in Spanish (`usuarios`, `episodios`, `creadores`). These are **deprecated and no longer in use**. All active data now lives exclusively in the **English-named collections** listed below.
+> **Important:** During development, some collections were created in Spanish (`usuarios`, `episodios`, `creadores`). These are **deprecated and no longer in use**. All active data now lives exclusively in the **English-named collections** listed below.
 
 | Collection | Description |
 |---|---|
