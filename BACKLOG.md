@@ -41,3 +41,20 @@ This backlog contains all activities, user stories, and deliverables developed t
 | PB-22 | S11 | As Data Seeder / QA, I want to generate advanced JSON arrays for testing. | Medium | Klara / Ariz | ⏳ Pending |
 | PB-23 | S12 | As Query Developer, I want to update documents using `updateOne()` and `updateMany()`. | High | Dilan | ⏳ Pending |
 | PB-24 | S12 | As Integration Specialist, I want to validate update operations in Atlas. | High | Iván | ⏳
+
+---
+
+# THIRD PARTIAL — FINAL INTEGRATION & DEPLOYMENT
+
+| ID | Sprint / Week | User Story | Priority | Responsible | Status |
+|----|---------------|-------------|-----------|-------------|--------|
+| PB-32 | S17 | As a team, we want to integrate all database features into the final project. | High | All Team | ⏳ Pending |
+| PB-33 | S17 | As Integration Specialist, I want to ensure the final MongoDB deployment works correctly. | High | Iván | ⏳ Pending |
+| PB-34 | S17 | As Scrum Master, I want to finalize the GitHub repository documentation. | High | Klara | ⏳ Pending |
+| PB-35 | S17 | As Query Developer, I want to validate all CRUD and aggregation scripts. | High | Dilan | ⏳ Pending |
+| PB-36 | S17 | As Data Modeler, I want to review the final schema structure. | Medium | Maria | ⏳ Pending |
+| PB-37 | S17 | As Data Seeder / QA, I want to validate all test datasets and detect bugs. | High | Klara / Ariz | ⏳ Pending |
+| PB-38 | S17 | As a team, we want to create the Release v3.0 final version. | High | All Team | ⏳ Pending |
+| PB-39 | S17 | As a team, we want to record the final functional demo video. | Medium | All Team | ⏳ Pending |
+| PB-40 | S18 | As a team, we want to present and defend the final project architecture. | High | All Team | ⏳ Pending |
+| PB-41 | S18 | As Scrum Master, I want to deliver the final project report and evaluation evidence. | High | Klara | ⏳ Pending |
