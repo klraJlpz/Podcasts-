@@ -21,7 +21,7 @@ Desarrollar una aplicación de gestión de podcasts respaldada por una base de d
 | EP-07 | Infraestructura y despliegue | Configuración de Atlas, repositorio, documentación y entrega final. |
 
 ---
-# 📦 FIRST TERM — ARCHITECTURE AND MODELING
+# 06 feb-20 mar — ARCHITECTURE AND MODELING
 
 | ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
 |----|--------|----------------------------------|-------------------|
@@ -38,7 +38,7 @@ Desarrollar una aplicación de gestión de podcasts respaldada por una base de d
 
 ---
 
-# 📦 SECOND TERM — QUERIES AND DATA MANIPULATION
+# 23 mar-14 may — QUERIES AND DATA MANIPULATION
 
 | ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
 |----|--------|----------------------------------|-------------------|
@@ -55,7 +55,7 @@ Desarrollar una aplicación de gestión de podcasts respaldada por una base de d
 
 ---
 
-# 📦 THIRD TERM — FINAL INTEGRATION AND DEPLOYMENT
+# 18 may-19 jun — FINAL INTEGRATION AND DEPLOYMENT
 
 | ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
 |----|--------|----------------------------------|-------------------|
