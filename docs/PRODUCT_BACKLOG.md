@@ -440,24 +440,25 @@ Given the project reaches final delivery
 When the development team presents the platform
 Then the presentation, documentation, diagrams, testing evidence, and demonstrations are complete and functional
 ```
-## 📊 PROGRESO DEL PROYECTO
+## 📊 PROJECT PROGRESS
 
-| Estado | Cantidad | Porcentaje |
+| Status | Quantity | Percentage |
 |--------|----------|------------|
-| ✅ Completadas | 16 | 53% |
-| 🔄 En progreso | 2 | 7% |
-| ⏳ Pendientes | 12 | 40% |
+| ✅ Completed | 16 | 53% |
+| 🔄 In Progress | 2 | 7% |
+| ⏳ Pending | 12 | 40% |
 | **Total** | **30** | **100%** |
 
+```text
+Current Progress: (16 / 30) × 100 = 53%
 ```
-Progreso actual: (16 / 30) × 100 = 53%
-```
 
+---
 
-## 👥 EQUIPO SCRUM
+## 👥 SCRUM TEAM
 
-| Rol | Integrante |
-|-----|------------|
+| Role | Team Member |
+|-----|-------------|
 | Scrum Master | Klara |
 | Data Modeler | Isabel |
 | Integration Specialist | Iván |
@@ -466,24 +467,25 @@ Progreso actual: (16 / 30) × 100 = 53%
 
 ---
 
-## 🗄️ COLECCIONES EN MONGODB ATLAS
+## 🗄️ COLLECTIONS IN MONGODB ATLAS
 
-| Colección | Documentos | Uso principal |
+| Collection | Documents | Main Purpose |
 |-----------|-----------|---------------|
-| `usuarios` | 72 | Perfil extendido del usuario |
-| `episodes` | 31 | Episodios del catálogo principal |
-| `users` | 10 | Datos de autenticación |
-| `podcasts` | 8 | Catálogo de podcasts |
-| `ratings` | 5 | Calificaciones de contenido |
-| `downloads` | 5 | Descargas de episodios |
-| `favorites` | 6 | Contenido guardado por el usuario |
-| `creadores` | 26 | Perfiles de creadores de contenido |
-| `episodios` | 3 | Episodios en español |
-| `playlists` | 1 | Listas de reproducción |
-| `reviews` | 1 | Reseñas escritas |
-| `queries` | 1 | Consultas registradas |
-| `accounts` | 0 | Cuentas de acceso |
-| `comments` | 0 | Comentarios de episodios |
-| `sessions` | 0 | Sesiones activas |
-| `listeninghistories` | 0 | Historial de escucha |
-| `verificationtokens` | 0 | Tokens de verificación |
+| `usuarios` | 72 | Extended user profile |
+| `episodes` | 31 | Main catalog episodes |
+| `users` | 10 | Authentication data |
+| `podcasts` | 8 | Podcast catalog |
+| `ratings` | 5 | Content ratings |
+| `downloads` | 5 | Episode downloads |
+| `favorites` | 6 | User saved content |
+| `creadores` | 26 | Content creator profiles |
+| `episodios` | 3 | Spanish-language episodes |
+| `playlists` | 1 | Playlists |
+| `reviews` | 1 | Written reviews |
+| `queries` | 1 | Stored queries |
+| `accounts` | 0 | Access accounts |
+| `comments` | 0 | Episode comments |
+| `sessions` | 0 | Active sessions |
+| `listeninghistories` | 0 | Listening history |
+| `verificationtokens` | 0 | Verification tokens |
+```
