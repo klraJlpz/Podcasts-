@@ -1,76 +1,445 @@
 # 📋 PRODUCT BACKLOG — STREAMING PODCAST MANAGER
+---
+## Product Goal
+
+Develop a secure, centralized, and cross-platform Podcast Management Platform (PMP) that allows users to discover content, manage their personal library, interact socially, and provides creators with tools to manage content and analyze performance metrics. The platform aims to minimize manual organization, improve accessibility, and deliver a seamless experience for listeners and creators.
 
 ---
 
-## 🎯 OBJETIVO DEL PRODUCTO
+# Epics
 
-Desarrollar una aplicación de gestión de podcasts respaldada por una base de datos NoSQL en MongoDB Atlas, que permita a los usuarios explorar contenido, gestionar su biblioteca personal, interactuar con la comunidad y a los creadores administrar sus episodios — todo mediante operaciones CRUD, consultas avanzadas y agregaciones, aplicando metodología Scrum.
+- **Epic 1: Account Management** – Registration, secure authentication, session management, and user profile administration.
 
----
+- **Epic 2: Content Exploration** – Podcast catalog browsing, episode visualization, searching, filtering, and advanced search.
 
-## 🗂️ ÉPICAS
+- **Epic 3: Personal Library** – Playlists, favorites, saved episodes, and library organization.
 
-| Epic ID | Nombre | Descripción |
-|---------|--------|-------------|
-| EP-01 | Gestión de cuenta | Registro, autenticación y administración del perfil de usuario. |
-| EP-02 | Exploración de contenido | Búsqueda, filtrado y visualización de podcasts y episodios. |
-| EP-03 | Biblioteca personal | Favoritos, listas de reproducción e historial del oyente. |
-| EP-04 | Interacción social | Comentarios, reseñas y calificaciones de contenido. |
-| EP-05 | Perfil de creador | Publicación y administración de contenido por parte del creador. |
-| EP-06 | Métricas y estadísticas | Reportes de actividad y rendimiento del contenido. |
-| EP-07 | Infraestructura y despliegue | Configuración de Atlas, repositorio, documentación y entrega final. |
+- **Epic 4: Social Interaction** – Comments, reviews, and ratings by listeners.
 
----
-# 06 feb-20 mar — ARCHITECTURE AND MODELING
+- **Epic 5: Creator Profile Management** – Creator profile, episode management, and content organization.
 
-| ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
-|----|--------|----------------------------------|-------------------|
-| US-SPM-01-01 | S1 | **User Story:** As a user, I want to register on the platform to create my personal account. <br> **Acceptance Criteria:** The system creates my account with valid credentials and no duplicates, allowing me to access the platform. | `users` / `accounts` |
-| US-SPM-01-02 | S1 | **User Story:** As a user, I want to securely log in and log out to protect my account. <br> **Acceptance Criteria:** When logging in, I securely access my profile. When logging out, my access is immediately invalidated. | `sessions` / `verificationtokens` |
-| US-SPM-02-03 | S2 | **User Story:** As a listener, I want to explore the available podcast catalog to discover new content. <br> **Acceptance Criteria:** I can view a list of podcasts with their title, category, and creator. | `podcasts` / `creadores` |
-| US-SPM-02-04 | S2 | **User Story:** As a listener, I want to view the episodes of a podcast to choose which one to listen to. <br> **Acceptance Criteria:** When selecting a podcast, I correctly see all its available episodes. | `episodes` / `episodios` |
-| US-SPM-07-05 | S3 | **User Story:** As a user, I want the application to be connected to the cloud so I can access my data from anywhere. <br> **Acceptance Criteria:** I can access my data anytime and from any device without interruptions. | `Cluster0` / `proyectopodcast` |
-| US-SPM-07-06 | S4 | **User Story:** As a user, I want the system to work with real data so I can validate all its functionalities. <br> **Acceptance Criteria:** The platform operates with at least 50 real records in the main collections without visible errors. | `usuarios` / `episodes` / `podcasts` |
-| US-SPM-02-07 | S4 | **User Story:** As a listener, I want to search for a podcast by name and get accurate results. <br> **Acceptance Criteria:** When typing a name, I only see the podcasts that match my search. | `podcasts` |
-| US-SPM-05-08 | S5 | **User Story:** As a creator, I want my episode and profile information to be well organized to ensure consistency in my content. <br> **Acceptance Criteria:** My profile and episodes are always displayed with complete and consistent information. | `creadores` / `episodios` |
-| US-SPM-07-09 | S6 | **User Story:** As a user, I want the project to be well documented so I can understand how it works and how to install it. <br> **Acceptance Criteria:** There is a clear installation, architecture, and usage guide that anyone can follow without prior knowledge of the project. | — |
-| US-SPM-07-10 | S7 | **User Story:** As a user, I want to understand the database structure so I can trust that my information is well organized. <br> **Acceptance Criteria:** There is a presentation with database diagrams, model explanations, and examples of how information is stored. | — |
+- **Epic 6: Metrics and Statistics** – Performance reports, download stats, ratings, and engagement tracking.
+
+- **Epic 7: Infrastructure and Deployment** – Cloud deployment, documentation, integration, testing, and final delivery.
 
 ---
 
-# 23 mar-14 may — QUERIES AND DATA MANIPULATION
+# User Stories & Acceptance Criteria
 
-| ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
-|----|--------|----------------------------------|-------------------|
-| US-SPM-02-11 | S8 | **User Story:** As a listener, I want to search for a specific episode by title to access it directly. <br> **Acceptance Criteria:** When searching for an episode by name, I immediately find the correct content. | `episodes` / `episodios` |
-| US-SPM-07-12 | S8 | **User Story:** As a user, I want searches on the platform to work correctly with real data. <br> **Acceptance Criteria:** All searches return correct results and no errors when tested with real content. | `podcasts` / `episodes` |
-| US-SPM-02-13 | S9 | **User Story:** As a listener, I want to filter podcasts by duration, rating, or category to find content that matches my preferences. <br> **Acceptance Criteria:** I can apply filters and only see podcasts that meet the selected criteria. | `podcasts` / `ratings` |
-| US-SPM-07-14 | S9 | **User Story:** As a user, I want search filters to work without errors so I do not receive incorrect results. <br> **Acceptance Criteria:** Errors found in filters are documented and fixed before affecting my experience. | `queries` |
-| US-SPM-02-15 | S10 | **User Story:** As a listener, I want to combine multiple search filters to obtain more precise results. <br> **Acceptance Criteria:** I can apply multiple filters at the same time and only see content that meets all my conditions. | `podcasts` / `episodes` |
-| US-SPM-07-16 | S10 | **User Story:** As a user, I want advanced filters to work correctly with all available content types. <br> **Acceptance Criteria:** Combined filters work without errors for both listener and creator profiles. | `usuarios` / `creadores` |
-| US-SPM-03-17 | S11 | **User Story:** As a listener, I want my playlists to contain multiple episodes organized efficiently. <br> **Acceptance Criteria:** I can see all my saved episodes in playlists and favorites in an organized and error-free way. | `playlists` / `favorites` |
-| US-SPM-07-18 | S11 | **User Story:** As a user, I want playlists and favorites to support large amounts of content without issues. <br> **Acceptance Criteria:** I can save more than 3 episodes in my playlists and favorites without losing information. | `playlists` / `favorites` |
-| US-SPM-04-19 | S12 | **User Story:** As a listener, I want to edit or delete my reviews and comments to keep my opinion updated. <br> **Acceptance Criteria:** I can modify or delete any review or comment I have published. | `reviews` / `comments` |
-| US-SPM-03-20 | S12 | **User Story:** As a listener, I want my favorites to update immediately when adding or removing content. <br> **Acceptance Criteria:** When adding or removing a favorite, the change is instantly reflected in my personal library. | `favorites` / `downloads` |
+## Epic 1: Account Management
+
+### US-PMP-01-01 – User Registration
+
+**Story Points:** 3
+
+### User Story
+
+As a user, I want to register on the platform so that I can create my personal account and access the podcast services.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Successful account registration
+
+Given a new user accesses the registration form
+When the user enters valid credentials and submits
+Then the system creates a unique account
+And prevents duplicate accounts
+And allows the user to access the platform
+```
 
 ---
 
-# 18 may-19 jun — FINAL INTEGRATION AND DEPLOYMENT
+### US-PMP-01-02 – Secure Login and Logout
 
-| ID | Sprint | User Story + Acceptance Criteria | MongoDB Collection |
-|----|--------|----------------------------------|-------------------|
-| US-SPM-07-21 | S17 | **User Story:** As a user, I want all application features to operate correctly in an integrated manner. <br> **Acceptance Criteria:** I can register, search, save favorites, comment, and manage content without conflicts between features. | All |
-| US-SPM-07-22 | S17 | **User Story:** As a user, I want the application to be stably available in the cloud to guarantee continuous access. <br> **Acceptance Criteria:** The platform responds correctly and without crashes during availability tests. | `Cluster0` |
-| US-SPM-07-23 | S17 | **User Story:** As a user, I want complete and updated documentation to understand how to use the platform. <br> **Acceptance Criteria:** The usage guide, architecture, and examples are updated and understandable for anyone. | — |
-| US-SPM-06-24 | S17 | **User Story:** As a creator, I want to see performance statistics for my episodes to make decisions about my content. <br> **Acceptance Criteria:** I can consult data such as average ratings, downloads, and episodes saved as favorites. | `ratings` / `downloads` / `favorites` |
-| US-SPM-05-25 | S17 | **User Story:** As a creator, I want my profile and episodes to support all available operations without errors. <br> **Acceptance Criteria:** I can create, modify, and delete my information and episodes without the system failing. | `creadores` / `episodios` |
-| US-SPM-07-26 | S17 | **User Story:** As a user, I want the platform data to be reliable and consistent so I can receive correct information. <br> **Acceptance Criteria:** All test data passes validation and there are no integrity errors in the available information. | All |
-| US-SPM-07-27 | S17 | **User Story:** As a user, I want the final version of the project to be complete and functional for real use. <br> **Acceptance Criteria:** The final version includes all functions, scripts, and documentation operating correctly. | — |
-| US-SPM-07-28 | S17 | **User Story:** As a user, I want to see a demonstration of the system working to verify that it meets my needs. <br> **Acceptance Criteria:** The demo video shows registration, search, favorites, comments, and statistics smoothly. | — |
-| US-SPM-07-29 | S18 | **User Story:** As a user, I want to attend a project presentation to verify the technical expertise of the responsible team. <br> **Acceptance Criteria:** The final presentation includes diagrams, design decisions, and a live demo working correctly. | — |
-| US-SPM-07-30 | S18 | **User Story:** As a user, I want a final project report that includes all evidence of its development and testing. <br> **Acceptance Criteria:** The final report includes backlog, sprints, retrospectives, testing evidence, and team evaluation. | — |
+**Story Points:** 3
+
+### User Story
+
+As a user, I want to securely log in and log out so that my account and personal information are protected.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Successful login
+
+Given a registered user exists
+When the user enters valid credentials
+Then the system authenticates the user
+And grants access to the personal profile
+```
+
+```gherkin
+Scenario: Successful logout
+
+Given an authenticated session
+When the user logs out
+Then the system invalidates the session immediately
+And restricts access to protected resources
+```
+
 ---
 
+## Epic 2: Content Exploration
+
+### US-PMP-02-03 – Podcast Catalog Exploration
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want to explore the available podcast catalog so that I can discover new content.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Viewing podcast catalog
+
+Given podcasts exist in the platform
+When the listener accesses the catalog
+Then the system displays all podcasts
+And shows title, category, and creator
+```
+
+---
+
+### US-PMP-02-04 – Episode Visualization
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want to view the episodes of a podcast so that I can select content to listen to.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Viewing podcast episodes
+
+Given a podcast contains episodes
+When the listener selects a podcast
+Then the system displays all associated episodes correctly
+```
+
+---
+
+### US-PMP-02-07 – Podcast Search
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want to search podcasts by name so that I can quickly find desired content.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Searching podcasts
+
+Given podcasts exist in the platform
+When the listener types a podcast name
+Then the system returns only matching podcasts
+```
+
+---
+
+### US-PMP-02-11 – Episode Search
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want to search episodes by title so that I can directly access specific content.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Searching episodes
+
+Given episodes exist in the platform
+When the listener searches by title
+Then the system immediately displays the correct episode
+```
+
+---
+
+### US-PMP-02-13 – Podcast Filtering
+
+**Story Points:** 8
+
+### User Story
+
+As a listener, I want to filter podcasts by duration, rating, or category so that I can discover content matching my preferences.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Applying podcast filters
+
+Given multiple podcasts are available
+When the listener applies filters
+Then the system displays only matching podcasts
+```
+
+---
+
+### US-PMP-02-15 – Advanced Combined Filters
+
+**Story Points:** 8
+
+### User Story
+
+As a listener, I want to combine multiple search filters so that I can obtain more precise results.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Applying combined filters
+
+Given multiple search filters exist
+When the listener combines them
+Then the system displays only content satisfying all conditions
+```
+
+---
+
+## Epic 3: Personal Library
+
+### US-PMP-03-17 – Playlist Organization
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want my playlists to contain multiple organized episodes so that I can manage my listening experience efficiently.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Viewing playlists and favorites
+
+Given the listener has saved episodes
+When accessing the personal library
+Then the system displays playlists and favorites correctly
+And organizes all content without errors
+```
+
+---
+
+### US-PMP-03-20 – Favorites Synchronization
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want favorites to update immediately when adding or removing content so that my library remains synchronized.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Updating favorites
+
+Given favorite content exists
+When the listener adds or removes an episode
+Then the system updates the favorites section instantly
+```
+
+---
+
+## Epic 4: Social Interaction
+
+### US-PMP-04-19 – Review and Comment Management
+
+**Story Points:** 5
+
+### User Story
+
+As a listener, I want to edit or delete my reviews and comments so that I can keep my opinions updated.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Editing comments and reviews
+
+Given the listener has published reviews or comments
+When the listener edits or deletes content
+Then the system updates or removes it successfully
+```
+
+---
+
+## Epic 5: Creator Profile Management
+
+### US-PMP-05-08 – Creator Content Organization
+
+**Story Points:** 5
+
+### User Story
+
+As a creator, I want my profile and episode information to remain organized so that my content stays consistent.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Managing creator profile information
+
+Given a creator profile exists
+When accessing profile management
+Then the system displays complete and consistent information
+```
+
+---
+
+### US-PMP-05-25 – Creator Content Operations
+
+**Story Points:** 8
+
+### User Story
+
+As a creator, I want to create, modify, and delete my episodes and profile information so that I can fully manage my content.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Managing creator content
+
+Given creator permissions exist
+When performing create, update, or delete operations
+Then the system executes them successfully
+And prevents system failures
+```
+
+---
+
+## Epic 6: Metrics and Statistics
+
+### US-PMP-06-24 – Content Performance Statistics
+
+**Story Points:** 8
+
+### User Story
+
+As a creator, I want to view episode performance statistics so that I can make informed decisions about my content.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Viewing analytics
+
+Given analytics data exists
+When the creator accesses the statistics dashboard
+Then the system displays ratings, downloads, and favorite metrics correctly
+```
+
+---
+
+## Epic 7: Infrastructure and Deployment
+
+### US-PMP-07-05 – Cloud Connectivity
+
+**Story Points:** 5
+
+### User Story
+
+As a user, I want the platform connected to the cloud so that I can access my data from any device.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Accessing cloud services
+
+Given the platform is deployed in the cloud
+When the user accesses it
+Then the system provides uninterrupted data access
+```
+
+---
+
+### US-PMP-07-06 – Real Data Validation
+
+**Story Points:** 5
+
+### User Story
+
+As a user, I want the platform to work with real data so that all functionalities can be validated properly.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Operating with real data
+
+Given real records exist
+When users interact with the platform
+Then all functionalities work without visible errors
+```
+
+---
+
+### US-PMP-07-09 – Project Documentation
+
+**Story Points:** 3
+
+### User Story
+
+As a user, I want complete project documentation so that I can understand installation and usage processes.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Accessing project documentation
+
+Given documentation exists
+When the user reviews installation and usage guides
+Then the information is clear and understandable
+```
+
+---
+
+### US-PMP-07-10 – Database Structure Presentation
+
+**Story Points:** 3
+
+### User Story
+
+As a user, I want to understand the database structure so that I can trust the organization of stored information.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Reviewing database structure
+
+Given the database presentation exists
+When the user reviews diagrams and explanations
+Then the database structure is clearly documented
+```
+
+---
+
+### US-PMP-07-21 to US-PMP-07-30 – Final Integration and Delivery
+
+**Story Points:** 13
+
+### User Story
+
+As a user, I want the final version of the project to be stable, complete, and fully functional so that all platform features operate correctly in real scenarios.
+
+### Acceptance Criteria
+
+```gherkin
+Scenario: Final system validation
+
+Given all modules are integrated
+When users test registration, searches, favorites, comments, statistics, and creator operations
+Then the platform functions correctly without integration conflicts
+```
+
+```gherkin
+Scenario: Final presentation and documentation
+
+Given the project reaches final delivery
+When the development team presents the platform
+Then the presentation, documentation, diagrams, testing evidence, and demonstrations are complete and functional
+```
 ## 📊 PROGRESO DEL PROYECTO
 
 | Estado | Cantidad | Porcentaje |
