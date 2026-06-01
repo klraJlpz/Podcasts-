@@ -26,9 +26,9 @@ Develop a secure, centralized, and cross-platform Podcast Management Platform (P
 
 # User Stories & Acceptance Criteria
 
-## Epic 1: Account Management
+# Epic 1: Account Management
 
-### US-PMP-01-01 – User Registration
+## US-PMP-01-01 – User Registration
 
 **Story Points:** 3
 
@@ -48,9 +48,36 @@ And prevents duplicate accounts
 And allows the user to access the platform
 ```
 
+```gherkin
+Scenario: Validation of required fields
+
+Given the registration form is displayed
+When the user leaves mandatory fields empty
+Then the system displays validation messages
+And prevents account creation
+```
+
+```gherkin
+Scenario: Password security validation
+
+Given the user enters a password
+When the password does not meet security requirements
+Then the system rejects the password
+And displays the corresponding security guidelines
+```
+
+```gherkin
+Scenario: Email uniqueness verification
+
+Given an email address already exists
+When the user attempts to register with the same email
+Then the system rejects the registration
+And informs the user that the email is already in use
+```
+
 ---
 
-### US-PMP-01-02 – Secure Login and Logout
+## US-PMP-01-02 – Secure Login and Logout
 
 **Story Points:** 3
 
@@ -78,11 +105,36 @@ Then the system invalidates the session immediately
 And restricts access to protected resources
 ```
 
+```gherkin
+Scenario: Invalid login credentials
+
+Given a registered user exists
+When invalid credentials are entered
+Then the system denies access
+And displays an authentication error message
+```
+
+```gherkin
+Scenario: Session persistence
+
+Given a user successfully authenticates
+When navigating through the platform
+Then the session remains active until logout or expiration
+```
+
+```gherkin
+Scenario: Automatic session expiration
+
+Given a user remains inactive for a defined period
+When the inactivity limit is reached
+Then the system closes the session automatically
+```
+
 ---
 
-## Epic 2: Content Exploration
+# Epic 2: Content Exploration
 
-### US-PMP-02-03 – Podcast Catalog Exploration
+## US-PMP-02-03 – Podcast Catalog Exploration
 
 **Story Points:** 5
 
@@ -101,9 +153,26 @@ Then the system displays all podcasts
 And shows title, category, and creator
 ```
 
+```gherkin
+Scenario: Empty catalog handling
+
+Given no podcasts are available
+When the listener accesses the catalog
+Then the system displays an informative message
+```
+
+```gherkin
+Scenario: Catalog loading performance
+
+Given a large number of podcasts exist
+When the listener accesses the catalog
+Then the catalog loads successfully
+And all information is displayed correctly
+```
+
 ---
 
-### US-PMP-02-04 – Episode Visualization
+## US-PMP-02-04 – Episode Visualization
 
 **Story Points:** 5
 
@@ -119,6 +188,22 @@ Scenario: Viewing podcast episodes
 Given a podcast contains episodes
 When the listener selects a podcast
 Then the system displays all associated episodes correctly
+```
+
+```gherkin
+Scenario: Episode information display
+
+Given episodes exist for a podcast
+When the listener views the episode list
+Then each episode displays title, duration, and publication date
+```
+
+```gherkin
+Scenario: Podcast without episodes
+
+Given a selected podcast contains no episodes
+When the listener opens the podcast
+Then the system displays an informative message
 ```
 
 ---
@@ -203,9 +288,9 @@ Then the system displays only content satisfying all conditions
 
 ---
 
-## Epic 3: Personal Library
+# Epic 3: Personal Library
 
-### US-PMP-03-17 – Playlist Organization
+## US-PMP-03-17 – Playlist Organization
 
 **Story Points:** 5
 
@@ -224,9 +309,33 @@ Then the system displays playlists and favorites correctly
 And organizes all content without errors
 ```
 
+```gherkin
+Scenario: Creating playlists
+
+Given the listener accesses the library
+When a new playlist is created
+Then the playlist is stored successfully
+```
+
+```gherkin
+Scenario: Adding episodes to playlists
+
+Given a playlist exists
+When the listener adds an episode
+Then the episode appears in the selected playlist
+```
+
+```gherkin
+Scenario: Removing episodes from playlists
+
+Given episodes exist in a playlist
+When the listener removes an episode
+Then the playlist updates immediately
+```
+
 ---
 
-### US-PMP-03-20 – Favorites Synchronization
+## US-PMP-03-20 – Favorites Synchronization
 
 **Story Points:** 5
 
@@ -244,11 +353,27 @@ When the listener adds or removes an episode
 Then the system updates the favorites section instantly
 ```
 
+```gherkin
+Scenario: Favorite persistence
+
+Given an episode is marked as favorite
+When the user logs in from another device
+Then the favorite episode remains synchronized
+```
+
+```gherkin
+Scenario: Duplicate favorite prevention
+
+Given an episode is already marked as favorite
+When the listener attempts to add it again
+Then the system prevents duplicate entries
+```
+
 ---
 
-## Epic 4: Social Interaction
+# Epic 4: Social Interaction
 
-### US-PMP-04-19 – Review and Comment Management
+## US-PMP-04-19 – Review and Comment Management
 
 **Story Points:** 5
 
@@ -264,6 +389,30 @@ Scenario: Editing comments and reviews
 Given the listener has published reviews or comments
 When the listener edits or deletes content
 Then the system updates or removes it successfully
+```
+
+```gherkin
+Scenario: Editing own comments only
+
+Given comments exist
+When a listener attempts to edit another user's comment
+Then the system denies the operation
+```
+
+```gherkin
+Scenario: Deleting own review
+
+Given a listener has submitted a review
+When the review is deleted
+Then it is removed from the platform immediately
+```
+
+```gherkin
+Scenario: Content validation
+
+Given a review is submitted
+When prohibited or empty content is detected
+Then the system rejects the submission
 ```
 
 ---
