@@ -1,328 +1,337 @@
-Sprint Backlog – Tercer Parcial
+# Sprint Backlog – Third Term
 
-Podcast Management Platform (PMP)
-
----
-
-Sprint 14 – Aggregation Intro
-
-Periodo: 18 al 22 de mayo
-
-Sprint Goal
-
-Implementar las primeras consultas de agregación para generar estadísticas básicas y preparar la base analítica del sistema.
-
-Historias de Usuario Seleccionadas
-
-US-PMP-06-24 – Content Performance Statistics
-
-Prioridad: Alta
-
-Tareas
-
-- Identificar métricas iniciales de desempeño del contenido.
-  
-  - Responsable: Isabel (Data Modeler)
-  - Estado: To Do
-
-- Diseñar pipeline de agregación utilizando "$match".
-  
-  - Responsable: Dilan (Query Developer)
-  - Estado: To Do
-
-- Implementar agrupaciones utilizando "$group".
-  
-  - Responsable: Dilan (Query Developer)
-  - Estado: To Do
-
-- Implementar conteos mediante "$count".
-  
-  - Responsable: Dilan (Query Developer)
-  - Estado: To Do
-
-US-PMP-07-06 – Real Data Validation
-
-Prioridad: Alta
-
-Tareas
-
-- Poblar la base de datos con registros de prueba realistas.
-  
-  - Responsable: Ariz (Data Seeder / QA)
-  - Estado: To Do
-
-- Verificar consistencia de los resultados obtenidos.
-  
-  - Responsable: Ariz (Data Seeder / QA)
-  - Estado: To Do
-
-US-PMP-07-09 – Project Documentation
-
-Prioridad: Media
-
-Tareas
-
-- Documentar la implementación del pipeline básico.
-  - Responsable: Klara (Scrum Master)
-  - Estado: To Do
-
-US-PMP-07-05 – Cloud Connectivity
-
-Prioridad: Media
-
-Tareas
-
-- Verificar funcionamiento de consultas en ambiente compartido.
-  - Responsable: Iván (Integration Specialist)
-  - Estado: To Do
+## Podcast Management Platform (PMP)
 
 ---
 
-Sprint 15 – Advanced Pipelines
+## Sprint 14 – Aggregation Intro
 
-Periodo: 25 al 29 de mayo
+**Period:** May 18–22
 
-Sprint Goal
+### Sprint Goal
 
-Desarrollar pipelines avanzados para soportar búsquedas complejas, filtrado y generación de reportes.
+Implement the first aggregation queries to generate basic statistics and establish the analytical foundation of the system.
 
-Historias de Usuario Seleccionadas
+### Selected User Stories
 
-US-PMP-02-15 – Advanced Combined Filters
+#### US-PMP-06-24 – Content Performance Statistics
 
-Prioridad: Alta
+**Priority:** High
 
-Tareas
+**Tasks**
 
-- Diseñar estrategia de filtros combinados.
-  
-  - Responsable: Isabel
-  - Estado: To Do
+* Identify initial content performance metrics.
 
-- Implementar operaciones "$project".
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Isabel (Data Modeler)
+  * Status: To Do
 
-- Implementar ordenamiento mediante "$sort".
-  
-  - Responsable: Dilan
-  - Estado: To Do
+* Design aggregation pipeline using `$match`.
 
-- Implementar limitación de resultados con "$limit".
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Dilan (Query Developer)
+  * Status: To Do
 
-US-PMP-06-24 – Content Performance Statistics
+* Implement grouping operations using `$group`.
 
-Prioridad: Alta
+  * Responsible: Dilan (Query Developer)
+  * Status: To Do
 
-Tareas
+* Implement counting operations using `$count`.
 
-- Integrar consultas entre colecciones usando "$lookup".
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Dilan (Query Developer)
+  * Status: To Do
 
-- Generar reportes avanzados para análisis.
-  
-  - Responsable: Isabel
-  - Estado: To Do
+#### US-PMP-07-06 – Real Data Validation
 
-US-PMP-07-06 – Real Data Validation
+**Priority:** High
 
-- Validar resultados obtenidos mediante pruebas funcionales.
-  - Responsable: Ariz
-  - Estado: To Do
+**Tasks**
 
-US-PMP-07-09 – Project Documentation
+* Populate the database with realistic test records.
 
-- Actualizar documentación técnica de reportes.
-  - Responsable: Klara
-  - Estado: To Do
+  * Responsible: Ariz (Data Seeder / QA)
+  * Status: To Do
 
-US-PMP-07-05 – Cloud Connectivity
+* Verify the consistency of the obtained results.
 
-- Validar integración de consultas en servidor.
-  - Responsable: Iván
-  - Estado: To Do
+  * Responsible: Ariz (Data Seeder / QA)
+  * Status: To Do
 
----
+#### US-PMP-07-09 – Project Documentation
 
-Sprint 16 – Indexes and Performance
+**Priority:** Medium
 
-Periodo: 1 al 5 de junio
+**Tasks**
 
-Sprint Goal
+* Document the implementation of the basic pipeline.
 
-Optimizar el rendimiento de consultas mediante índices y análisis de ejecución.
+  * Responsible: Klara (Scrum Master)
+  * Status: To Do
 
-Historias de Usuario Seleccionadas
+#### US-PMP-07-05 – Cloud Connectivity
 
-US-PMP-02-07 – Podcast Search
+**Priority:** Medium
 
-Prioridad: Alta
+**Tasks**
 
-Tareas
+* Verify query functionality in the shared environment.
 
-- Analizar patrones de búsqueda frecuentes.
-  
-  - Responsable: Isabel
-  - Estado: To Do
-
-- Crear índices para mejorar búsquedas.
-  
-  - Responsable: Dilan
-  - Estado: To Do
-
-US-PMP-02-11 – Episode Search
-
-Prioridad: Alta
-
-Tareas
-
-- Identificar campos candidatos para indexación.
-  
-  - Responsable: Isabel
-  - Estado: To Do
-
-- Optimizar consultas de búsqueda.
-  
-  - Responsable: Dilan
-  - Estado: To Do
-
-US-PMP-06-24 – Content Performance Statistics
-
-- Comparar tiempos de ejecución antes y después de la optimización.
-  - Responsable: Iván
-  - Estado: To Do
-
-US-PMP-07-06 – Real Data Validation
-
-- Ejecutar pruebas de rendimiento.
-  - Responsable: Ariz
-  - Estado: To Do
-
-US-PMP-07-09 – Project Documentation
-
-- Elaborar informe de auditoría de rendimiento.
-  - Responsable: Klara
-  - Estado: To Do
-
-US-PMP-07-10 – Database Structure Presentation
-
-- Actualizar documentación técnica de índices.
-  - Responsable: Isabel
-  - Estado: To Do
+  * Responsible: Iván (Integration Specialist)
+  * Status: To Do
 
 ---
 
-Sprint 17 – Final Integration
+## Sprint 15 – Advanced Pipelines
 
-Periodo: 8 al 12 de junio
+**Period:** May 25–29
 
-Sprint Goal
+### Sprint Goal
 
-Integrar todos los módulos del sistema y preparar la entrega final.
+Develop advanced pipelines to support complex searches, filtering, and report generation.
 
-Historias de Usuario Seleccionadas
+### Selected User Stories
 
-US-PMP-07-21 a US-PMP-07-30 – Final Integration and Delivery
+#### US-PMP-02-15 – Advanced Combined Filters
 
-Prioridad: Alta
+**Priority:** High
 
-Tareas
+**Tasks**
 
-- Integrar autenticación de usuarios.
-  
-  - Responsable: Iván
-  - Estado: To Do
+* Design a combined filtering strategy.
 
-- Integrar búsquedas y filtros avanzados.
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Isabel
+  * Status: To Do
 
-- Integrar biblioteca personal.
-  
-  - Responsable: Iván
-  - Estado: To Do
+* Implement `$project` operations.
 
-- Integrar módulo de estadísticas.
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Dilan
+  * Status: To Do
 
-- Ejecutar pruebas funcionales completas.
-  
-  - Responsable: Ariz
-  - Estado: To Do
+* Implement sorting using `$sort`.
 
-- Preparar README final.
-  
-  - Responsable: Klara
-  - Estado: To Do
+  * Responsible: Dilan
+  * Status: To Do
 
-- Actualizar diagramas finales.
-  
-  - Responsable: Isabel
-  - Estado: To Do
+* Implement result limiting with `$limit`.
 
-- Preparar demostración del proyecto.
-  
-  - Responsable: Klara
-  - Estado: To Do
+  * Responsible: Dilan
+  * Status: To Do
+
+#### US-PMP-06-24 – Content Performance Statistics
+
+**Priority:** High
+
+**Tasks**
+
+* Integrate cross-collection queries using `$lookup`.
+
+  * Responsible: Dilan
+  * Status: To Do
+
+* Generate advanced analytical reports.
+
+  * Responsible: Isabel
+  * Status: To Do
+
+#### US-PMP-07-06 – Real Data Validation
+
+* Validate results through functional testing.
+
+  * Responsible: Ariz
+  * Status: To Do
+
+#### US-PMP-07-09 – Project Documentation
+
+* Update the technical documentation for reports.
+
+  * Responsible: Klara
+  * Status: To Do
+
+#### US-PMP-07-05 – Cloud Connectivity
+
+* Validate query integration on the server.
+
+  * Responsible: Iván
+  * Status: To Do
 
 ---
 
-Sprint 18 – Final Evaluation
+## Sprint 16 – Indexes and Performance
 
-Periodo: 15 al 19 de junio
+**Period:** June 1–5
 
-Sprint Goal
+### Sprint Goal
 
-Realizar validación final, cierre administrativo y entrega oficial del proyecto.
+Optimize query performance through indexing and execution analysis.
 
-Historias de Usuario Seleccionadas
+### Selected User Stories
 
-US-PMP-07-21 a US-PMP-07-30 – Final Integration and Delivery
+#### US-PMP-02-07 – Podcast Search
 
-Prioridad: Alta
+**Priority:** High
 
-Tareas
+**Tasks**
 
-- Ejecutar pruebas End-to-End.
-  
-  - Responsable: Ariz
-  - Estado: To Do
+* Analyze common search patterns.
 
-- Corregir incidencias detectadas.
-  
-  - Responsable: Dilan
-  - Estado: To Do
+  * Responsible: Isabel
+  * Status: To Do
 
-- Revisar documentación final.
-  
-  - Responsable: Klara
-  - Estado: To Do
+* Create indexes to improve searches.
 
-- Validar diagramas definitivos.
-  
-  - Responsable: Isabel
-  - Estado: To Do
+  * Responsible: Dilan
+  * Status: To Do
 
-- Verificar despliegue final.
-  
-  - Responsable: Iván
-  - Estado: To Do
+#### US-PMP-02-11 – Episode Search
 
-- Preparar presentación de cierre.
-  
-  - Responsable: Klara
-  - Estado: To Do
+**Priority:** High
 
-- Realizar entrega oficial del proyecto.
-  
-  - Responsable: Todo el equipo
-  - Estado: To Do
+**Tasks**
+
+* Identify candidate fields for indexing.
+
+  * Responsible: Isabel
+  * Status: To Do
+
+* Optimize search queries.
+
+  * Responsible: Dilan
+  * Status: To Do
+
+#### US-PMP-06-24 – Content Performance Statistics
+
+* Compare execution times before and after optimization.
+
+  * Responsible: Iván
+  * Status: To Do
+
+#### US-PMP-07-06 – Real Data Validation
+
+* Execute performance tests.
+
+  * Responsible: Ariz
+  * Status: To Do
+
+#### US-PMP-07-09 – Project Documentation
+
+* Prepare a performance audit report.
+
+  * Responsible: Klara
+  * Status: To Do
+
+#### US-PMP-07-10 – Database Structure Presentation
+
+* Update the technical documentation for indexes.
+
+  * Responsible: Isabel
+  * Status: To Do
+
+---
+
+## Sprint 17 – Final Integration
+
+**Period:** June 8–12
+
+### Sprint Goal
+
+Integrate all system modules and prepare the final delivery.
+
+### Selected User Stories
+
+#### US-PMP-07-21 to US-PMP-07-30 – Final Integration and Delivery
+
+**Priority:** High
+
+**Tasks**
+
+* Integrate user authentication.
+
+  * Responsible: Iván
+  * Status: To Do
+
+* Integrate advanced search and filtering.
+
+  * Responsible: Dilan
+  * Status: To Do
+
+* Integrate personal library functionality.
+
+  * Responsible: Iván
+  * Status: To Do
+
+* Integrate the statistics module.
+
+  * Responsible: Dilan
+  * Status: To Do
+
+* Execute comprehensive functional testing.
+
+  * Responsible: Ariz
+  * Status: To Do
+
+* Prepare the final README.
+
+  * Responsible: Klara
+  * Status: To Do
+
+* Update final diagrams.
+
+  * Responsible: Isabel
+  * Status: To Do
+
+* Prepare the project demonstration.
+
+  * Responsible: Klara
+  * Status: To Do
+
+---
+
+## Sprint 18 – Final Evaluation
+
+**Period:** June 15–19
+
+### Sprint Goal
+
+Conduct final validation, administrative closure, and official project delivery.
+
+### Selected User Stories
+
+#### US-PMP-07-21 to US-PMP-07-30 – Final Integration and Delivery
+
+**Priority:** High
+
+**Tasks**
+
+* Execute End-to-End testing.
+
+  * Responsible: Ariz
+  * Status: To Do
+
+* Fix identified issues.
+
+  * Responsible: Dilan
+  * Status: To Do
+
+* Review final documentation.
+
+  * Responsible: Klara
+  * Status: To Do
+
+* Validate final diagrams.
+
+  * Responsible: Isabel
+  * Status: To Do
+
+* Verify final deployment.
+
+  * Responsible: Iván
+  * Status: To Do
+
+* Prepare the closing presentation.
+
+  * Responsible: Klara
+  * Status: To Do
+
+* Perform the official project delivery.
+
+  * Responsible: Entire Team
+  * Status: To Do
