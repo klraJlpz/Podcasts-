@@ -1,663 +1,246 @@
-# Podcast Management Platform (PMP)
-# Sprint Backlog
+🎧 Podcast Management Platform (PMP)
+
+Sprint 1 – Foundations and Modeling (Feb 6 – Mar 20)
+
+🥅 Sprint Goal
+
+Design the NoSQL architecture of the system, establish the database, create the main schema, and populate initial data for the PMP project.
+
+⚙️ Sprint Parameters & Capacity Plan
+
+- Duration: 6 weeks
+- Weekly Hours: 8 h
+- Total Capacity: 48 h
+- Estimated Workload: 40 h
+- Buffer: 8 h
+
+🧩 Selected Epics & User Stories
+
+Epic 1 – Account Management
+
+US-PMP-01-01 – Registration and Authentication
+Story Points: 5
+
+Acceptance Criteria:
+
+Scenario: Successful registration
+Given a new user
+When valid credentials are entered
+Then the system creates an account and authenticates the session
+
+Scenario: Invalid registration
+Given a new user
+When incomplete credentials are entered
+Then the system displays an error message
+
+Epic 2 – Schema Design
+
+US-PMP-02-03 – NoSQL Schema Design
+Story Points: 8
+
+Acceptance Criteria:
+
+Scenario: Schema validation
+Given an ER diagram
+When the collections are created
+Then the structure supports relationships between podcasts and episodes
+
+Scenario: Inconsistent schema
+Given a poorly defined schema
+When attempting to seed data
+Then the system rejects the operation
+
+Epic 3 – Data Seeding
+
+US-PMP-03-05 – Mass Data Generation
+Story Points: 5
+
+Acceptance Criteria:
+
+Scenario: Data loading
+Given a seeding script
+When it is executed
+Then 50+ valid documents are generated
+
+Scenario: Duplicate data
+Given an existing dataset
+When the seeding process is executed
+Then no duplicate records are generated
+
+👥 Team Responsibilities
+
+Role| Person| Responsibility
+Data Architect| Isabel| Schema design and data modeling
+Backend Developer| Dilan| MongoDB configuration and CRUD operations
+QA Engineer| Ariz| Data validation and testing
+Scrum Master| Klara| Documentation and progress tracking
+
+🔗 Dependencies and Independencies
+
+- Dependencies: Stable MongoDB Atlas connection, VS Code and Git installation.
+- Independencies: Schema design can progress without real data; seeding depends on the final schema.
 
 ---
 
-# Sprint 14 – Aggregation Introduction
+Sprint 2 – Queries and Data Manipulation (Mar 23 – May 14)
 
-## 1. Sprint Goal
+🥅 Sprint Goal
 
-Implement the initial analytics infrastructure using MongoDB Aggregation Framework to generate podcast performance statistics and prepare the platform for future reporting features.
+Implement basic and advanced queries, logical operators, and array manipulation to achieve complete data management within the platform.
 
----
+⚙️ Sprint Parameters & Capacity Plan
 
-## 2. Sprint Parameters & Capacity Plan
+- Duration: 7 weeks
+- Weekly Hours: 6 h
+- Total Capacity: 42 h
+- Estimated Workload: 36 h
+- Buffer: 6 h
 
-- Sprint Duration: 1 Week
-- Daily Commitment: 2 Hours (Monday – Friday)
-- Total Sprint Capacity: 10 Hours
-- Estimated Workload: 8 Hours
-- Buffer: 2 Hours
+🧩 Selected Epics & User Stories
 
----
+Epic 4 – CRUD Operations
 
-## 3. Selected Epics & User Stories
+US-PMP-04-10 – Data Retrieval and Projection
+Story Points: 5
 
-### Epic 6 – Metrics and Statistics
+Acceptance Criteria:
 
-#### US-PMP-06-24 – Content Performance Statistics
+Scenario: Basic query
+Given podcast data
+When findOne() is executed
+Then the correct documents are displayed
 
-**Story Points:** 8
+Scenario: Query with no results
+Given podcast data
+When a non-existent title is queried
+Then the system displays a "no results" message
 
-##### User Story
+Epic 5 – Logical & Comparison Operators
 
-As a creator, I want to view episode performance statistics so that I can make informed decisions about my content.
+US-PMP-05-13 – Advanced Filtering
+Story Points: 8
 
-##### Acceptance Criteria
+Acceptance Criteria:
 
-```gherkin
-Scenario: Viewing analytics
+Scenario: Logical filter
+Given multiple conditions
+When $and and $or are used
+Then only valid documents are returned
 
-Given analytics data exists
-When the creator accesses the statistics dashboard
-Then the system displays ratings, downloads, and favorite metrics correctly
-```
+Scenario: Comparison filter
+Given episodes with different durations
+When $gt and $lt are used
+Then only episodes meeting the condition are returned
 
-```gherkin
-Scenario: Viewing download statistics
+Epic 6 – Array Manipulation
 
-Given analytics data exists
-When the creator accesses statistics
-Then download metrics are displayed accurately
-```
+US-PMP-06-17 – Array Updates
+Story Points: 5
 
-```gherkin
-Scenario: Viewing engagement metrics
+Acceptance Criteria:
 
-Given analytics data exists
-When the creator reviews engagement reports
-Then favorites, ratings, and interactions are displayed correctly
-```
+Scenario: Incremental update
+Given a document with comments
+When $push is used
+Then a new comment is added without overwriting the array
 
-```gherkin
-Scenario: No analytics available
+Scenario: Element removal
+Given a document with comments
+When $pull is used
+Then the selected comment is removed successfully
 
-Given no analytics data exists
-When the creator accesses statistics
-Then the system displays an informative message
-```
+👥 Team Responsibilities
 
-### Epic 7 – Infrastructure and Deployment
+Role| Person| Responsibility
+Query Developer| Dilan| Query and operator implementation
+QA Engineer| Ariz| Filtering and manipulation testing
+Data Modeler| Isabel| Structure validation and consistency
+Scrum Master| Klara| Documentation and version control
 
-#### US-PMP-07-06 – Real Data Validation
+🔗 Dependencies and Independencies
 
-##### Acceptance Criteria
-
-```gherkin
-Scenario: Operating with real data
-
-Given real records exist
-When users interact with the platform
-Then all functionalities work without visible errors
-```
-
-```gherkin
-Scenario: Real data consistency
-
-Given real records exist
-When users perform operations
-Then all stored data remains consistent
-```
+- Dependencies: Initial database from Sprint 1, created and populated collections.
+- Independencies: Operator testing can be performed using simulated data.
 
 ---
 
-## 4. Action Plan & Task Breakdown
+Sprint 3 – Aggregations and Optimization (May 18 – Jun 19)
 
-### US-PMP-06-24 – Content Performance Statistics
+🥅 Sprint Goal
 
-#### Task 1: Analytics Design
+Develop analytical reports using the Aggregation Framework, optimize queries through indexes, and deliver the final version of the PMP project.
 
-Responsible: Isabel (Data Modeler)
+⚙️ Sprint Parameters & Capacity Plan
 
-- Define performance metrics.
-- Design aggregation strategy.
-- Define report structure.
+- Duration: 4 weeks
+- Weekly Hours: 10 h
+- Total Capacity: 40 h
+- Estimated Workload: 32 h
+- Buffer: 8 h
 
-#### Task 2: Aggregation Development
+🧩 Selected Epics & User Stories
 
-Responsible: Dilan (Query Developer)
+Epic 7 – Analytics & Reporting
 
-- Implement `$match`
-- Implement `$group`
-- Implement `$count`
-- Validate aggregation results
+US-PMP-07-21 – Performance Reports
+Story Points: 8
 
-### US-PMP-07-06 – Real Data Validation
+Acceptance Criteria:
 
-#### Task 3: Data Seeding and Validation
+Scenario: Report generation
+Given performance data
+When the aggregation pipeline is executed
+Then download and favorite metrics are displayed
 
-Responsible: Ariz (Data Seeder / QA)
+Scenario: Empty report
+Given no available data
+When the pipeline is executed
+Then the system displays a "no data available" message
 
-- Seed podcast collections.
-- Validate aggregation outputs.
-- Execute functional tests.
+Epic 8 – Index Optimization
 
-### US-PMP-07-09 – Project Documentation
+US-PMP-08-25 – Index Creation
+Story Points: 5
 
-#### Task 4: Documentation Update
+Acceptance Criteria:
 
-Responsible: Klara (Scrum Master)
+Scenario: Query optimization
+Given slow queries
+When indexes are applied
+Then response time improves
 
-- Document aggregation pipelines.
-- Update sprint artifacts.
+Scenario: Missing index
+Given a collection without an index
+When querying by a specific field
+Then the system warns about low performance
 
-### US-PMP-07-05 – Cloud Connectivity
+Epic 9 – Final Integration
 
-#### Task 5: Environment Verification
+US-PMP-09-30 – Final Delivery
+Story Points: 13
 
-Responsible: Iván (Integration Specialist)
+Acceptance Criteria:
 
-- Verify MongoDB connectivity.
-- Validate deployment environment.
-
----
-
-## 5. Weekly Execution Roadmap
-
-### Week 1: Aggregation Introduction (Est. 8–10 Hours)
-
-#### Focus
-
-Building the first analytical pipelines for podcast performance statistics.
-
-#### Key Tasks
-
-- Design performance metrics.
-- Implement aggregation operators.
-- Validate seeded data.
-- Generate initial reports.
-- Update technical documentation.
-
-#### Friday Milestone
-
-A functional aggregation pipeline capable of generating podcast performance reports.
-
----
-
-## 6. Impediments & Dependencies
-
-### Dependencies
-
-- Podcast collection available.
-- Episode collection available.
-- Seeded datasets loaded.
-
-### Impediments
-
-No impediments identified currently.
-
----
-
-## 7. Definition of Done (DoD)
-
-- Aggregation pipelines execute successfully.
-- Statistics are generated correctly.
-- Functional tests pass successfully.
-- Documentation is updated.
-- No critical defects remain.
-- Code is integrated into the repository.
-
----
-
-# Sprint 15 – Advanced Pipelines
-
-## 1. Sprint Goal
-
-Develop advanced aggregation pipelines to support filtering, searching, and complex reporting features.
-
----
-
-## 2. Sprint Parameters & Capacity Plan
-
-- Sprint Duration: 1 Week
-- Daily Commitment: 2 Hours
-- Total Sprint Capacity: 10 Hours
-- Estimated Workload: 8 Hours
-- Buffer: 2 Hours
-
----
-
-## 3. Selected Epics & User Stories
-
-### Epic 2 – Content Exploration
-
-#### US-PMP-02-15 – Advanced Combined Filters
-
-**Story Points:** 8
-
-##### User Story
-
-As a listener, I want to combine multiple search filters so that I can obtain more precise results.
-
-##### Acceptance Criteria
-
-```gherkin
-Scenario: Applying combined filters
-
-Given multiple search filters exist
-When the listener combines them
-Then the system displays only content satisfying all conditions
-```
-
-```gherkin
-Scenario: Combining category and rating filters
-
-Given multiple podcasts are available
-When category and rating filters are applied simultaneously
-Then only matching podcasts are displayed
-```
-
-```gherkin
-Scenario: No matching combined results
-
-Given multiple filters are combined
-When no podcast satisfies all conditions
-Then the system displays a no results message
-```
-
-### Epic 6 – Metrics and Statistics
-
-#### US-PMP-06-24 – Content Performance Statistics
-
----
-
-## 4. Action Plan & Task Breakdown
-
-### US-PMP-02-15 – Advanced Combined Filters
-
-#### Task 1: Filter Design
-
-Responsible: Isabel
-
-- Design filtering strategy.
-- Define search parameters.
-
-#### Task 2: Aggregation Enhancement
-
-Responsible: Dilan
-
-- Implement `$project`
-- Implement `$sort`
-- Implement `$limit`
-- Implement `$lookup`
-
-### US-PMP-06-24
-
-#### Task 3: Advanced Reports
-
-Responsible: Dilan
-
-- Build complex reports.
-- Validate analytical outputs.
-
-### US-PMP-07-06
-
-#### Task 4: Testing
-
-Responsible: Ariz
-
-- Validate report accuracy.
-- Perform QA testing.
-
-### US-PMP-07-09
-
-#### Task 5: Documentation
-
-Responsible: Klara
-
-- Document advanced pipelines.
-
-### US-PMP-07-05
-
-#### Task 6: Integration Validation
-
-Responsible: Iván
-
-- Validate server execution.
-
----
-
-## 5. Weekly Execution Roadmap
-
-### Week 2: Advanced Pipelines (Est. 8–10 Hours)
-
-#### Focus
-
-Developing advanced reports and filtering pipelines.
-
-#### Key Tasks
-
-- Implement lookup operations.
-- Develop advanced filters.
-- Create analytical reports.
-- Execute validation testing.
-
-#### Friday Milestone
-
-Advanced aggregation reports generated successfully.
-
----
-
-## 6. Impediments & Dependencies
-
-### Dependencies
-
-- Aggregation pipelines from Sprint 14 completed.
-- Seeded data available.
-
-### Impediments
-
-No impediments identified currently.
-
----
-
-## 7. Definition of Done (DoD)
-
-- Combined filters work correctly.
-- Advanced reports generate successfully.
-- All tests pass.
-- Documentation updated.
-- No critical issues remain.
-
----
-
-# Sprint 16 – Indexes & Performance
-
-## 1. Sprint Goal
-
-Optimize search and analytics performance through MongoDB indexing and query optimization.
-
----
-
-## 2. Sprint Parameters & Capacity Plan
-
-- Sprint Duration: 1 Week
-- Daily Commitment: 2 Hours
-- Total Sprint Capacity: 10 Hours
-- Estimated Workload: 8 Hours
-- Buffer: 2 Hours
-
----
-
-## 3. Selected Epics & User Stories
-
-### Epic 2 – Content Exploration
-
-#### US-PMP-02-07 – Podcast Search
-
-##### Acceptance Criteria
-
-```gherkin
-Scenario: Searching podcasts
-
-Given podcasts exist in the platform
-When the listener types a podcast name
-Then the system returns only matching podcasts
-```
-
-#### US-PMP-02-11 – Episode Search
-
-##### Acceptance Criteria
-
-```gherkin
-Scenario: Searching episodes
-
-Given episodes exist in the platform
-When the listener searches by title
-Then the system immediately displays the correct episode
-```
-
-### Epic 6 – Metrics and Statistics
-
-#### US-PMP-06-24 – Content Performance Statistics
-
----
-
-## 4. Action Plan & Task Breakdown
-
-### Task 1: Query Analysis
-
-Responsible: Isabel
-
-- Analyze search patterns.
-- Identify indexing candidates.
-
-### Task 2: Index Development
-
-Responsible: Dilan
-
-- Create indexes.
-- Optimize search queries.
-
-### Task 3: Performance Testing
-
-Responsible: Ariz
-
-- Execute benchmark tests.
-- Compare execution times.
-
-### Task 4: Infrastructure Validation
-
-Responsible: Iván
-
-- Verify optimized deployment.
-
-### Task 5: Documentation
-
-Responsible: Klara
-
-- Create performance audit documentation.
-
----
-
-## 5. Weekly Execution Roadmap
-
-### Week 3: Indexes & Performance
-
-#### Focus
-
-Improving query execution speed.
-
-#### Friday Milestone
-
-Optimized search performance using MongoDB indexes.
-
----
-
-## 6. Impediments & Dependencies
-
-### Dependencies
-
-- Search features completed.
-- Existing datasets available.
-
-### Impediments
-
-No impediments identified.
-
----
-
-## 7. Definition of Done (DoD)
-
-- Indexes created successfully.
-- Query performance improved.
-- Performance tests completed.
-- Documentation updated.
-
----
-
-# Sprint 17 – Final Integration
-
-## 1. Sprint Goal
-
-Integrate all PMP modules and prepare the final release candidate.
-
----
-
-## 3. Selected Epics & User Stories
-
-### Epic 7 – Infrastructure and Deployment
-
-#### US-PMP-07-21 to US-PMP-07-30 – Final Integration and Delivery
-
-##### Acceptance Criteria
-
-```gherkin
-Scenario: Final system validation
-
+Scenario: Final validation
 Given all modules are integrated
-When users test registration, searches, favorites, comments, statistics, and creator operations
-Then the platform functions correctly without integration conflicts
-```
-
-```gherkin
-Scenario: Final presentation and documentation
-
-Given the project reaches final delivery
-When the development team presents the platform
-Then the presentation, documentation, diagrams, testing evidence, and demonstrations are complete and functional
-```
-
----
-
-## 4. Action Plan & Task Breakdown
-
-### Integration Tasks
-
-Responsible: Iván
-
-- Integrate authentication module.
-- Integrate search services.
-- Integrate analytics module.
-
-### Backend Validation
-
-Responsible: Dilan
-
-- Verify API integration.
-- Resolve integration conflicts.
-
-### Testing
-
-Responsible: Ariz
-
-- Execute complete functional testing.
-
-### Documentation
-
-Responsible: Klara
-
-- Finalize README.
-- Prepare presentation materials.
-
-### Data Validation
-
-Responsible: Isabel
-
-- Validate final data structures.
-- Review database consistency.
-
----
-
-## 5. Weekly Execution Roadmap
-
-### Week 4: Final Integration
-
-#### Focus
-
-Preparing a fully functional PMP release.
-
-#### Friday Milestone
-
-Release Candidate v1.0 completed.
-
----
-
-## 6. Impediments & Dependencies
-
-### Dependencies
-
-- Previous sprints completed successfully.
-
-### Impediments
-
-No impediments identified.
-
----
-
-## 7. Definition of Done (DoD)
-
-- All modules integrated.
-- All critical tests passed.
-- Documentation completed.
-- Release candidate generated.
-
----
-
-# Sprint 18 – Final Evaluation
-
-## 1. Sprint Goal
-
-Perform final validation, project closure, and official delivery.
-
----
-
-## 4. Action Plan & Task Breakdown
-
-### Final QA
-
-Responsible: Ariz
-
-- Execute End-to-End tests.
-- Verify user workflows.
-
-### Bug Fixing
-
-Responsible: Dilan
-
-- Resolve remaining issues.
-
-### Documentation Review
-
-Responsible: Klara
-
-- Verify all deliverables.
-- Prepare final submission package.
-
-### Final Infrastructure Review
-
-Responsible: Iván
-
-- Verify deployment status.
-
-### Data Review
-
-Responsible: Isabel
-
-- Validate final database documentation.
-
----
-
-## 5. Weekly Execution Roadmap
-
-### Week 5: Final Evaluation
-
-#### Focus
-
-Project closure and delivery.
-
-#### Friday Milestone
-
-Final project successfully delivered and accepted.
-
----
-
-## 6. Impediments & Dependencies
-
-### Dependencies
-
-- Release Candidate approved.
-
-### Impediments
-
-No impediments identified.
-
----
-
-## 7. Definition of Done (DoD)
-
-- End-to-End tests completed.
-- No critical defects remain.
-- Documentation approved.
-- Final presentation delivered.
-- Project officially closed.
+When E2E tests are executed
+Then the system works without errors
+
+Scenario: Final presentation
+Given the project is complete
+When the demo is performed
+Then the documentation and system are approved by the Product Owner
+
+👥 Team Responsibilities
+
+Role| Person| Responsibility
+Data Analyst| Isabel| Pipeline and report design
+Query Developer| Dilan| Aggregation and index implementation
+QA Engineer| Ariz| Performance auditing
+Integration Specialist| Iván| Final integration and deployment
+Scrum Master| Klara| Documentation and final demo
+
+🔗 Dependencies and Independencies
+
+- Dependencies: Functional data and queries from Sprint 2, stable MongoDB Atlas connection.
+- Independencies: Optimization and indexing can be developed in parallel with reporting.
