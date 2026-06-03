@@ -83,17 +83,17 @@ Then no duplicate records are generated
 | Task | Role | Hours |
 |------|------|------|
 | Repository creation and Git configuration | Scrum Master | 6 h |
-| MongoDB Atlas setup | Backend Developer | 10 h |
-| Requirements analysis | Data Architect | 12 h |
+| MongoDB Atlas setup | Query Developer | 10 h |
+| Requirements analysis | Data Modeler | 12 h |
 | Initial documentation | Scrum Master | 12 h |
 
 ### Week 2 – Data Modeling (40 h)
 
 | Task | Role | Hours |
 |------|------|------|
-| Collection design | Data Architect | 16 h |
-| Relationship modeling | Data Architect | 12 h |
-| Schema validation | QA Engineer | 12 h |
+| Collection design | Data Modeler | 16 h |
+| Relationship modeling | Data Modeler | 12 h |
+| Schema validation | Data Seeder / QA | 12 h |
 
 ### Week 3 – Database Implementation (40 h)
 
