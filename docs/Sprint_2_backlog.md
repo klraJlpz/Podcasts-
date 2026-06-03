@@ -115,12 +115,12 @@ Then the selected comment is removed successfully
 
 ## 👥 Team Members
 
-| Role | Person | Responsibility |
-|------|------|------|
-| Query Developer | Dilan | Query and operator implementation |
-| QA Engineer | Ariz | Filtering and manipulation testing |
-| Data Modeler | Isabel | Structure validation and consistency checks |
-| Scrum Master | Klara | Documentation and version control |
+| Role | Person | Sprint Responsibilities |
+|------|--------|-------------------------|
+| Scrum Master | Klara | Track sprint progress, update documentation, manage version control and sprint reviews. |
+| Data Modeler | Isabel | Verify schema consistency, support query design, validate data relationships. |
+| Query Developer | Dilan | Implement CRUD operations, logical operators, comparison operators, and array manipulation queries. |
+| Data Seeder / QA | Ariz | Perform query testing, validate filters, verify array updates, and execute end-to-end tests. |
 
 ---
 
