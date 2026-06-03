@@ -51,6 +51,12 @@ Scenario: Validación de esquema
 Given un diagrama ER
 When se crean las colecciones
 Then la estructura soporta relaciones entre podcasts y episodios
+
+Scenario: Esquema inconsistente
+Given un esquema mal definido
+When se intenta poblar datos
+Then el sistema rechaza la operación
+ 
 ```
 
 #### **Epic 3 – Data Seeding**
@@ -62,6 +68,12 @@ Scenario: Carga de datos
 Given un script de seeding
 When se ejecuta
 Then se generan 50+ documentos válidos
+
+Scenario: Datos duplicados
+Given un dataset existente
+When se ejecuta el seeding
+Then no se generan duplicados
+
 ```
 
 ---
@@ -114,6 +126,12 @@ Scenario: Consulta básica
 Given datos de podcasts
 When se ejecuta findOne()
 Then se muestran los documentos correctos
+
+Scenario: Consulta sin resultados
+Given datos de podcasts
+When se consulta un título inexistente
+Then el sistema muestra mensaje de “sin resultados”
+
 ```
 
 #### **Epic 5 – Logical & Comparison Operators**
@@ -125,6 +143,12 @@ Scenario: Filtro lógico
 Given múltiples condiciones
 When se usa $and y $or
 Then se devuelven solo los documentos válidos
+
+Scenario: Filtro de comparación
+Given episodios con duración distinta
+When se usa $gt y $lt
+Then se devuelven solo los episodios que cumplen la condición
+
 ```
 
 #### **Epic 6 – Array Manipulation**
@@ -136,6 +160,12 @@ Scenario: Actualización incremental
 Given un documento con comentarios
 When se usa $push
 Then se agrega un nuevo comentario sin sobrescribir el array
+
+Scenario: Eliminación de elementos
+Given un documento con comentarios
+When se usa $pull
+Then el comentario seleccionado se elimina correctamente
+
 ```
 
 ---
@@ -188,6 +218,12 @@ Scenario: Generación de reportes
 Given datos de desempeño
 When se ejecuta el pipeline de agregación
 Then se muestran métricas de descargas y favoritos
+
+Scenario: Reporte vacío
+Given no existen datos
+When se ejecuta el pipeline
+Then el sistema muestra mensaje de “sin datos disponibles”
+ 
 ```
 
 #### **Epic 8 – Index Optimization**
@@ -199,6 +235,12 @@ Scenario: Optimización de consultas
 Given consultas lentas
 When se aplican índices
 Then el tiempo de respuesta mejora
+
+Scenario: Índice inexistente
+Given una colección sin índice
+When se consulta por campo específico
+Then el sistema advierte sobre rendimiento bajo
+
 ```
 
 #### **Epic 9 – Final Integration**
@@ -210,6 +252,12 @@ Scenario: Validación final
 Given todos los módulos integrados
 When se ejecutan pruebas E2E
 Then el sistema funciona sin errores
+
+Scenario: Presentación final
+Given el proyecto está completo
+When se realiza la demo
+Then la documentación y el sistema son aprobados por el Product Owner
+
 ```
 
 ---
