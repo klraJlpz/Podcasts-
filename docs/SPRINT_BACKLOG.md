@@ -10,10 +10,10 @@ Design the NoSQL architecture of the system, establish the database, create the 
 ---
 
 ### ⚙️ Sprint Parameters & Capacity Plan
-- **Duration:** 6 weeks
+- **Duration:** 5 weeks
 - **Weekly Hours:** 8 h
-- **Total Capacity:** 48 h
-- **Estimated Workload:** 40 h
+- **Total Capacity:** 36 h
+- **Estimated Workload:** 30 h
 - **Buffer:** 8 h
 
 ---
