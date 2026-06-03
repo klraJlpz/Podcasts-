@@ -35,6 +35,11 @@ Scenario: Registro exitoso
 Given un usuario nuevo
 When ingresa credenciales válidas
 Then el sistema crea una cuenta y autentica sesión
+
+Scenario: Registro inválido
+Given un usuario nuevo
+When ingresa credenciales incompletas
+Then el sistema muestra un mensaje de error
 ```
 
 #### **Epic 2 – Schema Design**
