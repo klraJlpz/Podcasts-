@@ -99,16 +99,16 @@ Then no duplicate records are generated
 
 | Task | Role | Hours |
 |------|------|------|
-| Collection creation | Backend Developer | 16 h |
-| CRUD structure setup | Backend Developer | 12 h |
-| Testing and validation | QA Engineer | 12 h |
+| Collection creation | Query Developer | 16 h |
+| CRUD structure setup | Integration Specialist| 12 h |
+| Testing and validation | Data Seeder / QA | 12 h |
 
 ### Week 4 – Data Seeding & Review (40 h)
 
 | Task | Role | Hours |
 |------|------|------|
-| Seed script development | Backend Developer | 16 h |
-| Sample data generation | Data Architect | 12 h |
+| Seed script development | Query Developer | 16 h |
+| Sample data generation | Data Modeler | 12 h |
 | Sprint review and documentation | Scrum Master | 12 h |
 
 ---
@@ -117,9 +117,9 @@ Then no duplicate records are generated
 
 | Role | Person | Responsibility |
 |------|------|------|
-| Data Architect | Isabel | Schema design and data modeling |
-| Backend Developer | Dilan | MongoDB configuration and CRUD operations |
-| QA Engineer | Ariz | Data validation and testing |
+| Data Modeler | Isabel | Schema design and data modeling |
+| Query Developer | Dilan | MongoDB configuration and CRUD operations |
+| Data Seeder / QA | Ariz | Data validation and testing |
 | Scrum Master | Klara | Documentation and progress tracking |
 
 ---
