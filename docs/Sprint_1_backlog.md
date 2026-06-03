@@ -113,7 +113,7 @@ Then no duplicate records are generated
 
 ---
 
-## 👥 Team Membe)
+## 👥 Team Members
 
 | Role | Person | Sprint Responsibilities |
 |------|--------|-------------------------|
