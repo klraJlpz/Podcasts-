@@ -115,13 +115,13 @@ Then the documentation and system are approved by the Product Owner
 
 ## 👥 Team Members
 
-| Role | Person | Responsibility |
-|------|------|------|
-| Data Analyst | Isabel | Pipeline and report design |
-| Query Developer | Dilan | Aggregation and index implementation |
-| QA Engineer | Ariz | Performance auditing |
-| Integration Specialist | Iván | Final integration and deployment |
-| Scrum Master | Klara | Documentation and final demo |
+| Role | Person | Sprint Responsibilities |
+|------|--------|-------------------------|
+| Scrum Master | Klara | Coordinate final delivery, prepare documentation, organize project presentation and demo. |
+| Data Modeler | Isabel | Design aggregation pipelines, validate reports, and ensure data consistency. |
+| Query Developer | Dilan | Develop aggregation queries, implement indexes, optimize performance, and support integration. |
+| Data Seeder / QA | Ariz | Execute performance testing, validate reports, perform final quality assurance and acceptance testing. |
+| Integration Specialist | Iván | Integrate all modules, deploy the final system, resolve integration issues, and support final delivery. |
 
 ---
 
