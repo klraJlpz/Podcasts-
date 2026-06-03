@@ -113,14 +113,14 @@ Then no duplicate records are generated
 
 ---
 
-## 👥 Team Members
+## 👥 Team Membe)
 
-| Role | Person | Responsibility |
-|------|------|------|
-| Data Modeler | Isabel | Schema design and data modeling |
-| Query Developer | Dilan | MongoDB configuration and CRUD operations |
-| Data Seeder / QA | Ariz | Data validation and testing |
-| Scrum Master | Klara | Documentation and progress tracking |
+| Role | Person | Sprint Responsibilities |
+|------|--------|-------------------------|
+| Scrum Master | Klara | Manage sprint planning, daily meetings, sprint review, documentation, and progress tracking. |
+| Data Modeler | Isabel | Design the NoSQL schema, define collections and relationships, validate the data model. |
+| Query Developer | Dilan | Configure MongoDB Atlas, create collections, implement database structure and seed scripts. |
+| Data Seeder / QA | Ariz | Validate schemas, verify data integrity, test database operations and generated datasets. |
 
 ---
 
