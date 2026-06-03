@@ -100,11 +100,11 @@ Implement basic and advanced queries, logical operators, and array manipulation 
 ---
 
 ### ⚙️ Sprint Parameters & Capacity Plan
-- **Duration:** 7 weeks
-- **Weekly Hours:** 6 h
-- **Total Capacity:** 42 h
-- **Estimated Workload:** 36 h
-- **Buffer:** 6 h
+- **Duration:** 5 weeks
+- **Weekly Hours:** 8 h
+- **Total Capacity:** 36 h
+- **Estimated Workload:** 30 h
+- **Buffer:** 8 h
 
 ---
 
@@ -191,9 +191,9 @@ Develop analytical reports using the Aggregation Framework, optimize queries thr
 
 ### ⚙️ Sprint Parameters & Capacity Plan
 - **Duration:** 4 weeks
-- **Weekly Hours:** 10 h
-- **Total Capacity:** 40 h
-- **Estimated Workload:** 32 h
+- **Weekly Hours:** 8 h
+- **Total Capacity:** 36 h
+- **Estimated Workload:** 30 h
 - **Buffer:** 8 h
 
 ---
