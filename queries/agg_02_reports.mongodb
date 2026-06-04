@@ -1,0 +1,25 @@
+// Advanced Pipeline – Top 5 podcasts with episodes
+db.podcasts.aggregate([
+  {
+    $project: {
+      title: 1,
+      category: 1,
+      downloads: 1,
+      creator: 1
+    }
+  },
+  {
+    $sort: { downloads: -1 } // Sort by downloads descending
+  },
+  {
+    $limit: 5 // Top 5 podcasts
+  },
+  {
+    $lookup: {
+      from: "episodes",        // Target collection
+      localField: "_id",       // Field in podcasts
+      foreignField: "podcastId", // Field in episodes
+      as: "episodes"           // Output array
+    }
+  }
+]);
