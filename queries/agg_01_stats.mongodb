@@ -1,0 +1,18 @@
+// Aggregation Intro – Podcast count by category
+db.podcasts.aggregate([
+  {
+    $match: { isActive: true } // Only active podcasts
+  },
+  {
+    $group: {
+      _id: "$category",        // Group by category
+      totalPodcasts: { $sum: 1 } // Count podcasts per category
+    }
+  },
+  {
+    $sort: { totalPodcasts: -1 } // Sort descending
+  },
+  {
+    $count: "totalCategories" // Count total categories processed
+  }
+]);
