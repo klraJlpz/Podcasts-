@@ -1,0 +1,12 @@
+-- File: scripts/update_data.sql
+-- Purpose: Update and delete operations
+-- Description: Increment downloads and remove inactive podcasts
+
+-- Increment downloads for a specific podcast
+UPDATE podcasts
+SET downloads = downloads + 1
+WHERE id = 3;
+
+-- Delete podcasts that are inactive
+DELETE FROM podcasts
+WHERE is_active = FALSE;
