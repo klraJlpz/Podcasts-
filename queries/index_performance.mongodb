@@ -1,0 +1,8 @@
+// Query without index
+db.podcasts.find({ title: "Tech Talks" }).explain("executionStats");
+
+// Create index on title
+db.podcasts.createIndex({ title: 1 });
+
+// Query with index
+db.podcasts.find({ title: "Tech Talks" }).explain("executionStats");
