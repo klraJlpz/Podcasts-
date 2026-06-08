@@ -43,11 +43,6 @@ A **Podcast Document** contains:
 - ✔️ Better scalability — horizontal scaling via Atlas clusters
 
 ---
-### 🔹 Product Backlog
-
-[📍See content ](BACKLOG.md)
----
-
 ## 🔹 Database Model
 
 This project uses:
